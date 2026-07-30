@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Chapters — Tech Awareness Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,body{margin:0;padding:0;background:#F8F3F1;color:#2C3E50;font-family:'Poppins',sans-serif;}
+    a{color:#2C3E50;text-decoration:none;}
+    a:hover{color:#D22B42;}
+    ::selection{background:#FAC206;color:#181818;}
+    :focus-visible{outline:2px solid #0B7DA8;outline-offset:2px;}
+  </style>
+</helmet>
+
+<div style="min-width:1100px">
+<dc-import name="SiteNav" active="chapters" hint-size="100%,84px"></dc-import>
+
+<header style="padding:56px 56px 48px;max-width:1400px;margin:0 auto">
+  <div style="color:#D22B42;font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:20px">Chapters</div>
+  <h1 style="font-size:clamp(3.5rem,7.5vw,6.875rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 28px;color:#181818">Pick<br><span style="margin-left:0.9em;color:#D22B42">your town.</span></h1>
+  <p style="font-size:1.125rem;line-height:1.65;max-width:560px;margin:0">Tap a chapter for its schedule and signup link. Three are live, three are forming — and forming means they need <em style="color:#D22B42;font-style:normal;font-weight:700">you</em>.</p>
+</header>
+
+<section data-screen-label="Chapter selector" style="padding:0 56px 96px;max-width:1400px;margin:0 auto">
+  <div style="display:grid;grid-template-columns:340px 1fr;gap:40px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <sc-for list="{{ chapters }}" as="ch" hint-placeholder-count="6">
+        <button onClick="{{ ch.select }}" aria-pressed="{{ ch.pressed }}" style="display:flex;align-items:center;justify-content:space-between;gap:14px;background:{{ ch.bg }};border:2px solid {{ ch.ring }};border-radius:16px;padding:16px 20px;cursor:pointer;font-family:'Poppins',sans-serif;text-align:left;color:#2C3E50;width:100%" style-hover="border-color:#D22B42">
+          <span style="display:flex;flex-direction:column;gap:2px">
+            <span style="font-size:1.063rem;font-weight:700">{{ ch.name }}</span>
+            <span style="font-size:0.75rem;opacity:0.6">{{ ch.sub }}</span>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:7px;font-size:0.688rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap"><span style="width:8px;height:8px;border-radius:999px;background:{{ ch.dot }}"></span>{{ ch.status }}</span>
+        </button>
+      </sc-for>
+    </div>
+    <div style="background:#E7E1DE;border-radius:24px;padding:40px;min-height:480px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px">
+        <h2 style="font-size:2.25rem;font-weight:800;letter-spacing:-0.01em;text-transform:uppercase;margin:0;color:#181818">{{ cName }}</h2>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:0.688rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:#F8F3F1;border-radius:999px;padding:6px 14px"><span style="width:8px;height:8px;border-radius:999px;background:{{ cDot }}"></span>{{ cStatus }}</span>
+      </div>
+      <p style="font-size:0.938rem;line-height:1.65;margin:0 0 28px;max-width:560px">{{ cBlurb }}</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px">
+        <div style="background:#F8F3F1;border-radius:16px;padding:20px">
+          <div style="font-size:0.688rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;opacity:0.5;margin-bottom:8px">Schedule</div>
+          <div style="font-size:1rem;font-weight:600;display:flex;align-items:center;gap:10px;flex-wrap:wrap">{{ cSchedule }}
+            <sc-if value="{{ cShowConfirm }}" hint-placeholder-val="{{ false }}">
+              <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.563rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px">Confirm time</span>
+            </sc-if>
+          </div>
+        </div>
+        <div style="background:#F8F3F1;border-radius:16px;padding:20px">
+          <div style="font-size:0.688rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;opacity:0.5;margin-bottom:8px">Where</div>
+          <div style="font-size:1rem;font-weight:600">{{ cVenue }}</div>
+        </div>
+      </div>
+      <sc-if value="{{ cHasPhoto }}" hint-placeholder-val="{{ true }}">
+        <img src="{{ cPhoto }}" alt="{{ cAlt }}" style="width:100%;height:280px;object-fit:cover;border-radius:16px;display:block;margin-bottom:28px">
+      </sc-if>
+      <sc-if value="{{ cNoPhoto }}" hint-placeholder-val="{{ false }}">
+        <div style="width:100%;height:180px;border:2px dashed #2C3E50;border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;box-sizing:border-box;margin-bottom:28px">
+          <span style="font-size:0.875rem;opacity:0.6;max-width:380px;line-height:1.6">No photos yet — because it hasn't happened yet. Want to change that? Scroll down.</span>
+        </div>
+      </sc-if>
+      <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+        <sc-if value="{{ cIsLive }}" hint-placeholder-val="{{ true }}">
+          <a href="{{ cSignup }}" style="display:inline-flex;background:#181818;color:#F8F3F1;padding:14px 28px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">Library signup form →</a>
+          <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
+            <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.563rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px">Confirm signup URL</span>
+          </sc-if>
+        </sc-if>
+        <sc-if value="{{ cNoPhoto }}" hint-placeholder-val="{{ false }}">
+          <a href="StartChapter.dc.html" style="display:inline-flex;border:2px solid #181818;color:#181818;padding:12px 28px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#181818;color:#F8F3F1">Be the one who starts it →</a>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="50 towns ask" style="background:#2E2B25;color:#F8F3F1;padding:96px 56px">
+  <div style="max-width:1400px;margin:0 auto">
+    <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FAC206;margin-bottom:16px">The ambition</div>
+    <h2 style="font-size:clamp(3rem,6vw,5.5rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 24px">5 towns →<br><span style="margin-left:0.9em;color:#FAC206">50 towns.</span><br>One year<span style="color:#16C0FF">.</span></h2>
+    <p style="font-size:1.063rem;line-height:1.65;max-width:600px;margin:0 0 16px;opacity:0.85">Here's the honest math: we can't do that alone. Every new town needs one person willing to lead a chapter — we bring the curriculum, the toolkits, the training, and the playbook. You bring a library room and an hour a week.</p>
+    <p style="font-size:1.063rem;line-height:1.65;max-width:600px;margin:0 0 40px;opacity:0.85">Live in Westborough, Worcester, Hopkinton — or anywhere we're not yet? That's not a gap. That's your chapter.</p>
+    <a href="StartChapter.dc.html" style="display:inline-flex;background:#FAC206;color:#181818;padding:18px 36px;border-radius:999px;font-size:1rem;font-weight:700" style-hover="background:#F8F3F1;color:#181818">I want to lead a chapter →</a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = { sel: 'shrewsbury' };
+  data = [
+    { id: 'shrewsbury', name: 'Shrewsbury', sub: 'Flagship chapter', live: true, confirmTime: false, schedule: 'Tuesdays, 7:30–8:30 PM', venue: 'Shrewsbury Public Library', photo: 'uploads/DSC_5293%20copy.jpeg', photoAlt: 'A student marking screw positions on an iFixit mat beside an opened phone at the Shrewsbury workshop', signup: '#',
+      blurb: 'Where it started. The full 12-week cycle runs here every week — drop in any Tuesday, no signup needed to attend.' },
+    { id: 'grafton', name: 'Grafton', sub: 'Live chapter', live: true, confirmTime: false, schedule: 'Saturdays, 12:00–1:00 PM', venue: 'Grafton Public Library', photo: 'uploads/DSC_5423.jpeg', photoAlt: 'A young student examining a disassembled camera over an iFixit mat at the Grafton workshop', signup: '#',
+      blurb: 'Our first expansion town. Same curriculum, Saturday schedule — good if weeknights don\u2019t work for you.' },
+    { id: 'southgate', name: 'Southgate', sub: 'Senior Center', live: true, confirmTime: true, schedule: 'Time TBD', venue: 'Southgate Senior Center', photo: 'uploads/DSC_5557.jpeg', photoAlt: 'A one-on-one session over an open laptop at Southgate Senior Center', signup: '#',
+      blurb: 'Home of Senior Tech Support — one-on-one sessions, your device and your questions. (Confirming whether this becomes a general workshop chapter too.)' },
+    { id: 'westborough', name: 'Westborough', sub: 'Forming', live: false, confirmTime: true, schedule: 'Time TBD', venue: 'Venue TBD', photo: null, signup: null,
+      blurb: 'Forming now. We\u2019re lining up a venue and a chapter leader — if that could be you, we want to hear from you.' },
+    { id: 'worcester', name: 'Worcester', sub: 'Forming', live: false, confirmTime: true, schedule: 'Time TBD', venue: 'Venue TBD', photo: null, signup: null,
+      blurb: 'Forming now. The biggest town on our list — and the one that needs the most hands.' },
+    { id: 'hopkinton', name: 'Hopkinton', sub: 'Forming', live: false, confirmTime: true, schedule: 'Time TBD', venue: 'Venue TBD', photo: null, signup: null,
+      blurb: 'Forming now. First session happens as soon as a leader steps up.' },
+  ];
+  renderVals() {
+    const showFlags = this.props.showFlags ?? true;
+    const c = this.data.find(d => d.id === this.state.sel) || this.data[0];
+    return {
+      showFlags,
+      chapters: this.data.map(d => ({
+        name: d.name, sub: d.sub,
+        status: d.live ? 'Live' : 'Forming',
+        dot: d.live ? '#16C0FF' : '#FAC206',
+        select: () => this.setState({ sel: d.id }),
+        pressed: String(d.id === this.state.sel),
+        ring: d.id === this.state.sel ? '#FB4B5F' : 'transparent',
+        bg: d.id === this.state.sel ? '#E7E1DE' : '#F8F3F1',
+      })),
+      cName: c.name,
+      cStatus: c.live ? 'Live' : 'Forming',
+      cDot: c.live ? '#16C0FF' : '#FAC206',
+      cBlurb: c.blurb,
+      cSchedule: c.schedule,
+      cVenue: c.venue,
+      cShowConfirm: showFlags && c.confirmTime,
+      cHasPhoto: !!c.photo,
+      cNoPhoto: !c.photo,
+      cPhoto: c.photo || '',
+      cAlt: c.photoAlt || '',
+      cIsLive: c.live,
+      cSignup: c.signup || '#',
+    };
+  }
+}
+</script>
+</body>
+</html>

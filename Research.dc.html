@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Research — Tech Awareness Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,body{margin:0;padding:0;background:#F8F3F1;color:#2C3E50;font-family:'Poppins',sans-serif;}
+    a{color:#2C3E50;text-decoration:none;}
+    a:hover{color:#D22B42;}
+    ::selection{background:#FAC206;color:#181818;}
+    :focus-visible{outline:2px solid #0B7DA8;outline-offset:2px;}
+  </style>
+</helmet>
+
+<div style="min-width:1100px">
+<dc-import name="SiteNav" active="none" hint-size="100%,84px"></dc-import>
+
+<header style="padding:56px 56px 72px;max-width:1400px;margin:0 auto">
+  <div style="color:#0B7DA8;font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:20px">Research</div>
+  <h1 style="font-size:clamp(3.5rem,7.5vw,6.875rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 28px;color:#181818">The data behind<br><span style="margin-left:0.9em;color:#0B7DA8">the drives.</span></h1>
+  <p style="font-size:1.125rem;line-height:1.65;max-width:600px;margin:0">Our device intake isn't just a program — it's a dataset. This page is for researchers, admissions readers, and anyone who wants the rigorous version.</p>
+</header>
+
+<section data-screen-label="Paper" style="padding:0 56px 96px;max-width:1400px;margin:0 auto">
+  <div style="background:#E7E1DE;border-radius:24px;padding:56px;max-width:960px">
+    <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#0B7DA8;margin-bottom:16px">Working paper — NSRI</div>
+    <h2 style="font-size:1.875rem;font-weight:800;line-height:1.2;letter-spacing:-0.01em;margin:0 0 20px;color:#181818">The economics of donated e-waste: evidence from a 110-device corporate hardware batch</h2>
+    <p style="font-size:1rem;line-height:1.75;margin:0 0 16px">The paper uses TAA's Granite Telecommunications device batch as a live dataset: intake condition, triage outcome (resell / refurbish / parts / recycle), repair cost, and realized resale value for each unit, tracked through the program's actual operations rather than modeled.</p>
+    <p style="font-size:1rem;line-height:1.75;margin:0 0 32px">It contributes a data point we have not found published elsewhere: the rate at which donated enterprise hardware arrives dead-on-arrival due to BIOS/UEFI firmware locks — machines that are physically functional but administratively unusable, a distinct and measurable loss category in device-donation pipelines.</p>
+    <div style="background:#181818;color:#F8F3F1;border-radius:16px;padding:28px 32px;margin-bottom:32px">
+      <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#FAC206;margin-bottom:8px">Novel finding</div>
+      <div style="font-size:1.125rem;font-weight:600;line-height:1.5">BIOS/UEFI-lock DOA rates in donated corporate hardware — measured, not estimated.</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <a href="mailto:ronit@techawarenessma.com?subject=Research%20inquiry" style="display:inline-flex;background:#181818;color:#F8F3F1;padding:14px 28px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">Request the paper →</a>
+      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm what's shareable — full paper, abstract, or headline finding</span>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showFlags: this.props.showFlags ?? true };
+  }
+}
+</script>
+</body>
+</html>

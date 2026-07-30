@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Privacy Policy — Tech Awareness Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,body{margin:0;padding:0;background:#F8F3F1;color:#2C3E50;font-family:'Poppins',sans-serif;}
+    a{color:#2C3E50;text-decoration:none;}
+    a:hover{color:#D22B42;}
+    ::selection{background:#FAC206;color:#181818;}
+    :focus-visible{outline:2px solid #0B7DA8;outline-offset:2px;}
+  </style>
+</helmet>
+
+<div style="min-width:1100px">
+<dc-import name="SiteNav" active="none" hint-size="100%,84px"></dc-import>
+
+<header style="padding:56px 56px 48px;max-width:1400px;margin:0 auto">
+  <div style="color:#0B7DA8;font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:20px">Privacy policy</div>
+  <h1 style="font-size:clamp(3rem,6vw,5.5rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 24px;color:#181818">Your data,<br><span style="margin-left:0.9em;color:#D22B42">plainly.</span></h1>
+  <p style="font-size:1.125rem;line-height:1.65;max-width:600px;margin:0 0 12px">We're a student-run nonprofit, not an ad company. Here's everything we collect, in plain language — this covers techawarenessma.com and our two apps, Teardown and Susu.</p>
+  <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
+    <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Build note — link this page from teardown.* and susu.* footers too</span>
+  </sc-if>
+</header>
+
+<section data-screen-label="Policy" style="padding:24px 56px 96px;max-width:1400px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+  <div style="background:#E7E1DE;border-radius:24px;padding:48px;max-width:900px">
+    <h2 style="font-size:1.625rem;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;margin:0 0 20px;color:#181818">What we collect<span style="color:#0B7DA8">.</span></h2>
+    <div style="display:flex;flex-direction:column;gap:16px;font-size:1rem;line-height:1.65">
+      <div><strong>An age range on Susu</strong> — asked once during onboarding, so the lessons start at the right level. That's the only thing Susu asks for.</div>
+      <div><strong>An email and your progress on Teardown</strong> — only if you choose to make an account to save your repairs. No account, no data.</div>
+      <div><strong>What you send us</strong> — contact emails, volunteer and chapter-request submissions.</div>
+      <div><strong>A newsletter email</strong> — only if you sign up for updates.</div>
+    </div>
+  </div>
+  <div style="background:#E7E1DE;border-radius:24px;padding:48px;max-width:900px">
+    <h2 style="font-size:1.625rem;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;margin:0 0 20px;color:#181818">What it's used for<span style="color:#946D00">.</span></h2>
+    <p style="font-size:1rem;line-height:1.7;margin:0">Making Susu fit your starting level. Saving your Teardown progress. Answering your emails. Sending the updates you asked for — new chapters, schedule changes, e-waste drive dates. That's the whole list.</p>
+  </div>
+  <div style="background:#181818;color:#F8F3F1;border-radius:24px;padding:48px;max-width:900px">
+    <h2 style="font-size:1.625rem;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;margin:0 0 20px">What we never do<span style="color:#FB4B5F">.</span></h2>
+    <p style="font-size:1rem;line-height:1.7;margin:0">We don't sell your data. We don't share it with advertisers. There's no third-party ad targeting anywhere on our sites or apps. We teach people to spot online sketchiness — we're not going to be it.</p>
+  </div>
+  <div style="background:#E7E1DE;border-radius:24px;padding:36px 48px;max-width:900px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <div style="font-size:1rem;font-weight:600">Questions about any of this?</div>
+    <a href="mailto:contact@techawarenessma.com?subject=Privacy%20question" style="background:#181818;color:#F8F3F1;padding:14px 28px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">contact@techawarenessma.com →</a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,700px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showFlags: this.props.showFlags ?? true };
+  }
+}
+</script>
+</body>
+</html>

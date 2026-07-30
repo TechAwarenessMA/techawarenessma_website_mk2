@@ -1,0 +1,1028 @@
+TECH AWARENESS ASSOCIATION 	VERSION 1.0 · 2026 · ISSUED TO APPROVED CHAPTER APPLICANTS
+CERTIFICATION HANDBOOK FOR CHAPTER LEADS
+CHAPTER
+REPLICATION
+GUIDE
+This is the whole training program for running a Tech
+Awareness Chapter. You work through it alone, at your own
+pace. Finishing the reading doesn't make you a chapter
+lead. Getting your certification submission approved does.
+FOUNDED AND DIRECTED BY RONIT SHARMA
+NOT FOR PUBLIC DISTRIBUTION 	FIG. 01 · WORKSHOP STATION, HOST LIBRARY
+
+-- 1 of 20 --
+
+CONTENTSCONDENSED FIELD EDITION. PART 8 (THE KNOWLEDGE CHECK) AND APPENDICES A TO F LIVE IN THE FULL HANDBOOK.
+ORIENTATION
+How to use this handbook 	03	03	03	03
+Part 1 · What TAA is 	04	04	04	04
+What we believe 	05
+Backing, and what a chapter is 	06
+Leadership 	07
+Roles and code of conduct 	08
+TRAINING MODULES
+M1 · Tools, workbench, safety 	09	09	09	09
+Battery safety · no exceptions 	10
+M2 · Repair fundamentals 	11	11	11	11
+Device classes · when to stop 	12
+M3 · Required viewing 	13	13	13	13
+M4 · Teaching older adults 	14	14	14	14
+Language rules · hard moments 	15
+M5 · Teaching hands-on repair 	16	16	16	16
+Run-of-show · practice devices 	17
+OPERATIONS
+Part 7 · Running your chapter 	18	18	18	18
+Volunteers, reporting, growth 	19
+Certification submission 	20	20	20	20
+THE PATH, IN ONE LINE
+Application → handbook → Modules 1
+to 5 → knowledge check → two videos
+→ charter → first workshop → full
+status after three reported workshops.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	C O N T E N T S · 0 2
+
+-- 2 of 20 --
+
+ORIENTATION 	PLAN ON 3 TO 4 WEEKS, PART-TIME
+HOW TO USE THIS HANDBOOK
+This isn't reading material. It's a course. Five modules,
+each with a checkpoint you have to actually do,
+then a written knowledge check and a certification
+submission at the end.
+Here's why it works this way: TAA is small and growing fast.
+We can't personally train every chapter lead, and we're not
+going to pretend we can. So we wrote down everything we
+know and built a way to check that you actually learned it.
+Steps 4 and 5 are real gates, and yes, we do turn
+people away at them. Not because we enjoy being
+difficult. It's the reason a library trusts a stranger
+in their building under our name.
+DON'T RUSH IT
+If you try to knock this out in a weekend, you'll fail
+the certification submission. The hands-on parts
+need you to take devices apart and put them back
+together over and over, and that takes days, not hours.
+THE PATH FROM APPLICANT TO CHAPTER
+STAGE 	WHAT YOU DO 	WHO DECIDES
+1 · Application 	Submit the form your library posted 	TAA reviews
+2 · Handbook
+issued You get this document and your toolkit 	No gate here
+3 · Modules 1 to 5 	Self-study, roughly 12 to 18 hours total 	You
+4 · Knowledge
+check Complete Part 8 in writing, submit it 	TAA reviews
+5 · Certification 	Two videos: one repair, one mock lesson 	TAA reviews
+6 · Chartered Tools, materials, library introduction
+confirmed
+TAA issues
+charter
+7 · First workshop 	Run it. Submit the post-workshop report 	You + TAA
+8 · Full charter After three completed workshops with
+reports TAA confirms
+45m
+PART 1
+4h
+MODULE 1
+7h
+MODULE 2
+4h
+MODULE 3
+3h
+MODULE 4
+3h
+MODULE 5
+3h
+PARTS 8 +
+9
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	H O W T O U S E · 0 3
+
+-- 3 of 20 --
+
+PART 1 	45 MINUTES READING
+WHAT TECH
+AWARENESS
+ASSOCIATION IS
+We make technology repairable and understandable
+for the people the tech industry stopped designing
+for. We do two things, in public, for free:
+01 · DEVICE REPAIR
+People open up, diagnose,
+and fix their own phones,
+laptops, tablets, and watches.
+Their own hands, real tools.
+02 · DIGITAL LITERACY
+People learn to use the devices
+they already own without fear:
+settings, storage, backups,
+passwords, and how to spot a scam.
+TAA started with a rejection. Our founder pitched a device-repair
+club at school and got turned down. Turns out the idea never needed
+a school. It needed a room, a table, some tools, and people who
+wanted to learn, and public libraries have all four. Nobody handed
+TAA a budget or permission. Your chapter gets built the same way.
+FIG. 02 · WE RUN IN LIBRARIES AND SENIOR CENTERS, THE
+PLACES ANYONE CAN WALK INTO WITHOUT PAYING OR EXPLAINING
+THEMSELVES
+A library workshop in session
+or browse files
+
+-- 4 of 20 --
+
+PART 1 · 1.2 	FIVE COMMITMENTS, NOT DECORATION
+WHAT WE BELIEVE
+01
+A DEVICE YOU CANNOT OPEN IS A
+DEVICE YOU DO NOT OWN
+Manufacturers spent twenty years making
+repair harder: glued batteries, weird screws,
+serialized parts. That's power moving
+away from ordinary people, and we teach
+repair as a way of taking some of it back.
+02
+THE PERSON DOES THE REPAIR. NOT
+US.
+The hardest rule we have. If you leave
+a workshop having personally fixed
+twelve devices while twelve people
+watched, you failed. We're a teaching
+organization, not a repair counter.
+03
+FAILURE IS PART OF THE LESSON, AND
+WE PLAN FOR IT
+Someone will strip a screw. Someone
+will tear a ribbon cable. Good. That's
+what learning looks like, and it's
+why we practice on devices we own
+instead of people's real phones.
+04
+NOBODY GETS CONDESCENDED TO
+Our attendees ran businesses, taught
+school, wired houses, kept books. They're
+capable adults who were never shown
+this one particular thing. The second
+your tone slips into baby talk, you've
+lost them, and they won't come back.
+05
+BROKEN THINGS ARE A RESOURCE,
+NOT GARBAGE
+Around sixty million tons of e-waste gets
+generated worldwide every year, and only
+a fraction gets properly recycled. Every
+device a chapter keeps alive is one that
+never becomes trash, and every dead
+one is teaching material or spare parts.
+READ THIS FIRST
+If any of these five bugs you, this isn't
+the right organization for you. Better
+to figure that out now, on this page.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	P A R T 1 · 0 5
+
+-- 5 of 20 --
+
+PART 1 · 1.4 TO 1.5 	SAY IT PLAINLY. NEVER INFLATE IT.
+WHO BACKS US, AND WHAT A CHAPTER IS
+4
+TOWNS WITH OPERATING CHAPTERS
+~110
+ENTERPRISE DEVICES DONATED BY
+GRANITE GIVES BACK
+72+38
+SFF DESKTOPS + LAPTOPS, DELL
+AND LENOVO UNITS
+100
+TESTED 8GB DDR4 MODULES FOR
+TEACHING UPGRADES
+You're not starting from zero. When you walk into
+a library, you represent an organization running in
+four towns, with corporate hardware from Granite
+Telecommunications' Granite Gives Back program
+and a curriculum that's been tested on real attendees.
+Our toolkits and required reading come from iFixit,
+the biggest open repair knowledge platform there is.
+☐ OPEN ITEMS · CONFIRM BEFORE DISTRIBUTING
+Name the four towns and host venues. State
+the exact 501(c)(3) status. Describe the iFixit
+relationship only in terms iFixit has agreed to
+in writing. Overstating a partner in a document
+you hand to strangers is how partnerships end.
+FIG. 03 · PRACTICE INVENTORY: GRANITE GIVES BACK
+DESKTOPS AND LAPTOPS
+A TECH AWARENESS CHAPTER. EVERY WORD HERE IS A REQUIREMENT.
+RECURRING
+At least once a month. One
+workshop is an event, not a
+chapter.
+FREE
+Attendees never pay. No
+fee, no door donation, no
+materials charge.
+PUBLIC
+Anyone can walk in. No
+screening, no membership,
+no age limit.
+FIXED VENUE
+A library or senior center.
+Not your house, not a
+coffee shop, not a garage.
+CERTIFIED LEAD
+That's you, after you pass
+Parts 8 and 9. Not before.
+TAA NAME
+Our materials, our safety
+rules, honest
+representation. In
+exchange you get the
+name, the toolkit, the
+hardware, and the
+introduction.
+✗ NOT A REPAIR SHOP 	✗ NOT A BUSINESS 	✗ NOT A PERSONAL BRAND
+✗ NOT UNSUPERVISED
+Donated practice hardware
+or browse files
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	P A R T 1 · 0 6
+
+-- 6 of 20 --
+
+PART 1 · 1.4 	THE PEOPLE BEHIND THE FOUR TOWNS
+WHO RUNS TAA
+RONIT SHARMA
+EXECUTIVE DIRECTOR
+TANAY MANGAL
+PROGRAMS & EDUCATION
+NATHAN ANWIN
+OPERATIONS & LOGISTICS
+SUHAAS GOLUGURI
+OUTREACH & COMMUNITY
+EKANSH JAIN
+FINANCE & IMPACT
+SUHRIT GHOSH
+SOCIAL MEDIA LEAD
+Portrait: Ronit Sharma
+or browse files
+Portrait: Tanay Mangal
+or browse files
+Portrait: Nathan Anwin
+or browse files
+Portrait: Suhaas Goluguri
+or browse files
+Portrait: Ekansh Jain
+or browse files
+Portrait: Suhrit Ghosh
+or browse files
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	P A R T 1 · 0 7
+
+-- 7 of 20 --
+
+PART 1 · 1.6 TO 1.7 	GET TO 3 TO 5 PEOPLE BEFORE YOUR FIRST WORKSHOP
+CHAPTER ROLES & CODE OF CONDUCT
+CHAPTER LEAD
+The person on the hook for everything.
+Owns the venue relationship, the
+safety briefing, the inventory, the
+report, and the call to stop a repair.
+CERTIFIED · PARTS 8 + 9
+CO-LEAD
+Your backup. Recruit one within
+ninety days. A one-person
+chapter is one bad week away
+from ending, and most dead
+chapters died exactly that way.
+CERTIFIED · PARTS 8 + 9
+REPAIR INSTRUCTOR
+Runs one station of 2 to 4 attendees.
+Coaches through the escalation
+ladder: words first, pointing
+second, hands almost never.
+MODULES 1, 2, 4, 5 + CHECK
+DIGITAL LITERACY INSTRUCTOR
+The non-repair half of the mission,
+and often the most impactful
+seat in the room. A patient
+retiree or a librarian usually
+beats a hotshot technician here.
+MODULES 1 (SAFETY), 4, 5
+INTAKE & GREETER
+The first face people see. Sign-
+in, acknowledgment form, "what
+brought you in today?", the
+queue, and the attendance count.
+MODULE 4 + SAFETY BRIEFING
+INVENTORY STEWARD
+Counts tools in and out, tracks
+practice devices, keeps consumables
+stocked, and handles battery storage
+and disposal. Chapters lose toolkits.
+It's embarrassing and expensive.
+MODULE 1 IN FULL · METICULOUS
+LIBRARY LIAISON
+Optional. Someone on the inside at
+the venue who helps with booking,
+promotion, and the stuff you'd
+otherwise learn the hard way.
+VENUE STAFF OR REGULAR PATRON
+R U L E O F T H U M B
+One person can hold two
+roles. Nobody should hold
+four. Recruit the way you
+got recruited: through the
+library, and through people
+who showed up and liked it.
+CODE OF CONDUCT. YOU AGREE TO ALL TEN AS A CONDITION OF YOUR CHARTER.
+01 · Never charge, solicit, or accept payment
+under the TAA name
+06 · Never claim partnerships, funding, or
+status TAA doesn't have
+02 · Never use a workshop to drum up
+business for anyone
+07 · Treat every attendee as a capable adult
+03 · Run the safety briefing before anyone
+picks up a tool
+08 · Report honestly, including the workshops
+that flopped
+04 · Follow the practice-device policy, no
+exceptions
+09 · Report injuries, damage, or serious
+incidents within 24 hours
+05 · Stop any repair you believe has become
+unsafe
+10 · Never touch an attendee's accounts,
+photos, messages, or files
+POINT 10, PLAINLY
+You'll be handed unlocked phones by people who
+trust you. Don't ask for a passcode you don't need.
+Don't take a device out of the room. Don't touch
+an account. If a repair needs the phone unlocked,
+the owner unlocks it and keeps their hands on it.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	P A R T 1 · 0 8
+
+-- 8 of 20 --
+
+MODULE 1 	2H READING + 2H HANDS-ON 	WRONG TOOL · LOST SCREW · BATTERY
+TOOLS, WORKBENCH, AND SAFETY
+Every serious repair failure comes down to one of three things: the wrong tool, a lost screw, or a battery.
+THE KIT · IFIXIT PRO TECH TOOLKIT
+64-bit driver
+Phillips, Torx, Pentalobe, JIS, Tri-point and
+more. Seat the bit fully, press down, turn
+steadily.
+Nylon
+spudger ×2
+Your go-to around connectors and boards.
+Pointed end for cables, blunt end for prying.
+Plastic
+opening
+tools ×3
+The default pry. Not sure which tool to grab?
+It's usually this one.
+Opening
+picks ×6
+Cut and hold screen adhesive. They wear
+out, so buy extras.
+ESD
+tweezers ×3
+Screws, ribbon cables, tight spots. Genuinely
+sharp, and never a prying tool.
+Suction cup Lifts glued displays. Warm the screen first;
+tape over shattered glass.
+Metal
+spudger ·
+Jimmy
+For stubborn casings only. Not ESD safe.
+These stay in the Lead's hands, not an
+attendee's.
+Wrist strap ·
+magnetic
+mat
+The two most underestimated things in the
+kit. More on both at right.
+Buy separately: 91%+ isopropyl, lint-free swabs,
+nitrile gloves, a good light, adhesive strips, a
+multimeter, and a fireproof battery container.
+SCREW DISCIPLINE · THE MAT METHOD
+1 Draw the device outline on the mat before you
+open anything
+2 Each screw goes on the mat in the position it
+came from
+3 Circle and label each group: "back cover",
+"shield", "bracket"
+4 On reassembly, work backwards through the
+mat
+5 Can't account for every screw? Don't close the
+device.
+A screw one millimeter too long, driven
+into the wrong hole, can punch straight
+through a logic board. The mat gets
+used or the repair doesn't start. Hand
+attendees the marker; drawing the
+outline turns them from a passenger
+into the person running the process.
+ESD · THE DAMAGE YOU CAN'T FEEL
+You're carrying a static charge you can't feel,
+and a zap way below anything you'd notice
+can quietly damage a chip. The damage
+often shows up later: the device works
+today and dies in three weeks. In a teaching
+setting, that's the worst possible outcome.
+→ Wrist strap on, clipped to unpainted metal,
+before the case opens
+→ Touch grounded metal before handling any
+board
+→ No wool, fleece, or shuffling around on carpet in
+socks
+→ Boards go into antistatic bags or onto the mat,
+never onto fabric
+→ Metal spudger and Jimmy are not ESD safe;
+nylon and ESD tweezers are
+BITS YOU'LL ACTUALLY MEET:
+PH000 TO PH1 · P2/P5 PENTALOBE · Y000 TRI-
+POINT · T2 TO T8 TORX · JIS (STRIPS IF YOU
+USE A PHILLIPS BIT ON IT)
+FIG. 04 · STATION SETUP: HARD SURFACE,
+MAT, DIRECTIONAL LIGHT
+A station: mat, light, strap
+or browse files
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 1 · 0 9
+
+-- 9 of 20 --
+
+MODULE 1 · 1.5 	READ THIS TWICE. THEN AGAIN BEFORE YOUR FIRST WORKSHOP.
+BATTERY SAFETY: NO EXCEPTIONS, EVER
+Puncture a lithium cell and it can vent superheated gas and catch fire. This is the one thing in the whole
+curriculum that can put someone in a hospital.
+THE SEVEN RULES
+1 · Below 25% charge before any repair near
+a battery. iFixit tested this: a punctured cell
+at about 25% smoked and sparked but
+never hit thermal runaway. A full cell is a
+completely different event.
+2 · Plastic tools only near a battery. Always.
+No metal spudger, no Jimmy, no
+screwdriver, no knife.
+3 · Never pry against the face of a cell. Pull
+the tabs, use isopropyl, use gentle heat, be
+patient. A battery that won't come out is
+information, not a challenge.
+4 · A swollen battery ends the repair.
+Bulging cover, lifting screen, a device that
+won't sit flat. Full procedure at right.
+5 · Punctured cell? Everyone backs away.
+Forget the repair and the data. No water.
+Don't breathe the gas. Fire beyond a quick
+spark means evacuate and pull the alarm.
+6 · Batteries never go in the trash. Tape the
+terminals, into the container, off to a real
+battery recycling drop-off. Lots of libraries
+already have one. Ask.
+7 · You are the last word. An attendee may
+push you to keep going. Say no. This is the
+one spot in this handbook where you
+overrule the person who owns the device.
+REQUIRED AT EVERY WORKSHOP: FIREPROOF
+CONTAINER WITH A LID · NITRILE GLOVES ·
+KNOW WHERE THE EXTINGUISHER IS · A ROOM
+YOU CAN CLEAR FAST. NO CONTAINER, NO
+BATTERY WORK.
+THE SWOLLEN BATTERY PROCEDURE, EVERY SINGLE TIME
+01 	Stop. Tools down.
+02 	Don't press, bend, flex, or pry the device
+03 	Power it off. Don't charge it.
+04 	Into the fireproof container
+05 	Tell the attendee straight: it's a fire risk, don't use or
+charge it, it needs a professional. Hand them the
+referral list.
+06 	Log it in the post-workshop report
+You'll feel like you're letting them down. You're not. You're
+the person in the room who knew what they were looking at.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 1 · 1 0
+
+-- 10 of 20 --
+
+MODULE 2 	3H READING + 4H HANDS-ON 	METHOD BEATS MEMORIZATION
+THE UNIVERSAL REPAIR SEQUENCE
+Every repair on every device follows the same nine steps. Teach the sequence itself. It's worth more than any single
+repair, because it transfers to devices we never covered.
+01 · LISTEN
+Let them describe the problem all the
+way through without jumping in to guess.
+"It's slow," "it shuts off," and "the screen
+went dark" are three different problems.
+02 · REPRODUCE
+Make the fault happen in front of you. If you
+can't reproduce it, you can't prove you fixed it.
+03 · ASK THE BORING QUESTIONS
+How old is it? What changed? Was it
+dropped? Was it wet? And the single
+best diagnostic question there is: "has
+anyone worked on it before?"
+04 · RULE OUT SOFTWARE
+Reboot, check storage, battery health,
+updates, and any app installed the
+week it started. This step alone solves
+a third of what walks in the door.
+05 · RESEARCH
+Look up the exact model on iFixit. Read
+the whole guide first, and read the
+comments, because that's where you
+find out step 14 breaks the flex cable.
+06 · PLAN THE EXIT
+What's the failure mode of this repair,
+and what do you do if it happens? If
+there's data on it the owner cares about
+and it isn't backed up, back it up or stop.
+07 · DISASSEMBLE DELIBERATELY
+Mat out, screws mapped, photos as you
+go. Stop at the first weird resistance and
+figure out why. Force isn't a technique.
+It's a decision to break something.
+08 · TEST BEFORE CLOSING
+Power on and test the fault plus the basics:
+display, touch, sound, charging, buttons.
+Finding a dead speaker after you've re-glued
+the screen means doing the repair twice.
+09 · DEBRIEF
+What was wrong, what fixed it, what to watch
+for. If it was the battery, explain what battery
+health means and how to slow the decline.
+1/3 of "broken" devices are actually software: full
+storage, a failed update, a rogue app, a setting.
+Always rule out software before you open anything.
+The highest satisfaction-per-minute repair in existence: a plug of pocket
+lint packed into the charging port. Wooden toothpick, gentle scraping,
+phone off, no metal. It's the perfect first win for a nervous attendee.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 2 · 1 1
+
+-- 11 of 20 --
+
+MODULE 2 · 2.3 TO 2.8 	A FEW SOLID REPAIRS + THE JUDGMENT TO STOP
+WHAT'S REALISTIC, BY DEVICE CLASS
+DESKTOPS
+EASIEST. START NERVOUS
+ATTENDEES HERE.
+✓ RAM and storage installs
+✓ PSU, fans, dust removal
+✓ CMOS battery, OS reinstall
+✓ No-POST basics
+✗ Check donated units for
+BIOS supervisor locks before
+you build a lesson around
+them
+LAPTOPS
+THE BEST TEACHING CLASS
+✓ HDD to SSD (the most
+dramatic upgrade a user will
+ever feel)
+✓ RAM, battery, keyboard
+✓ Fan clean + thermal paste
+✓ Linux on aging machines
+✗ Board-level work · hinge
+welding. And always
+disconnect the internal
+battery first.
+PHONES
+MOST REQUESTED, LEAST
+FORGIVING
+✓ Port cleaning, battery
+swaps on moderate-rated
+models
+✓ Screens rated moderate or
+below
+✓ Battery health, backups,
+scam recognition
+✗ Soldering · water damage ·
+Face ID / Touch ID (serialized,
+breaks for good)
+TABLETS
+LARGE PHONES, WORSE
+ADHESIVE
+✓ Port cleaning, settings,
+storage
+✓ Accessibility configuration
+✓ Text size, screen zoom,
+video calling. Don't underrate
+this.
+✗ Screen swaps as an
+attendee activity on most big
+tablets
+WEARABLES
+HARDEST COMMON CLASS. BE
+HONEST.
+✓ Bands, charging contacts
+✓ Fall detection, heart rate
+and accessibility settings,
+which is usually the more
+valuable session anyway
+✗ Watch displays and
+batteries as attendee hands-
+on · anything needing water-
+resistance resealing
+STOP AND REFER WHEN 	Swollen battery · water damage · soldering required · a serialized part that breaks a feature they rely on · top-tier iFixit difficulty
+· unbacked-up data at risk · missing tool or part · repair costs close to replacement · your gut says stop. If you feel out of
+your depth, you are. Saying "this is past what I can safely do here, and here's who can" is what competence sounds like.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 2 · 1 2
+
+-- 12 of 20 --
+
+MODULE 3 	ABOUT 4 HOURS OF VIDEO 	WRITTEN GUIDES TEACH SEQUENCE. VIDEO TEACHES HANDS.
+REQUIRED VIEWING
+THE ACTIVE VIEWING PROTOCOL
+Watching repair videos on the couch is entertainment.
+It builds zero skill. Follow this or the module is wasted:
+1 Watch once at normal speed, hands empty, phone
+away
+2 Watch again with a practice device in front of you,
+pausing at every step and doing it
+3 Write down every warning. A warning is the
+compressed experience of someone who already
+broke one.
+4 Study how they talk. The good ones narrate their
+reasoning, not just their actions. That's exactly the style
+you'll use at a workshop table.
+5 Watch their recoveries. Someone calmly fixing a
+mistake on camera is the most valuable footage in the
+whole video.
+ASSIGNED CHANNELS. WATCH SEVERAL; ONE PRESENTER'S HABITS AREN'T THE WHOLE CRAFT.
+Phone Repair Guru 	Your main phone channel. Beginner-friendly, full walkthroughs. ASSIGNED: 4
+FULL REPAIRS: SCREEN, BATTERY, CHARGE PORT, ONE DIAGNOSTIC
+iFixit 	Teardowns and tool technique. Pair each video with the written guide for the
+same device. ASSIGNED: 2 TEARDOWNS OF DEVICES IN YOUR INVENTORY
+Hugh Jeffreys 	Full restorations, smart parts sourcing, and the best explanation anywhere of
+parts pairing and serialization. ASSIGNED: 2 RESTORATIONS + 1 ON SERIALIZATION
+JerryRigEverything 	How devices are actually built. Watch critically; it's not a model for how to handle
+an attendee's device. ASSIGNED: 2 TEARDOWNS
+Louis Rossmann 	The why behind right to repair, plus diagnostic thinking way above workshop
+level. You're not learning to microsolder. You're learning to think like a technician.
+ASSIGNED: 1 DIAGNOSTIC + 1 INDUSTRY VIDEO
+Before you move on, you should be able to: describe how much force a pick takes under
+a glued screen · tell adhesive releasing apart from glass starting to crack · narrate
+a repair out loud · explain serialization to a non-technical person in under a minute
+· recover from a mistake without visibly panicking.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 3 · 1 3
+
+-- 13 of 20 --
+
+MODULE 4 	2H READING + 1H PRACTICE 	THE MOST SKILLED LEADS WHO FAIL, FAIL HERE
+TEACHING OLDER ADULTS
+None of this is about capability. Think of it as accommodation, the same way a lecture hall has a microphone.
+VISION
+Print handouts at 14pt or
+bigger. Task lighting at
+every station. Bump up the
+device's own text size first,
+and do it with them so they
+can do it again at home.
+HEARING
+Face the person when you
+talk. Lower your pitch instead
+of raising your volume;
+shouting raises pitch and
+makes it worse. Never talk
+from behind someone.
+FINE MOTOR
+Tremor and arthritis are
+common, and people
+usually don't mention them.
+Reverse tweezers hold
+without grip. Stable surface,
+elbow support, both hands
+braced. Never rush a hand.
+MEMORY
+New sequences take longer;
+judgment is fine. One step
+at a time, written steps to
+take home, and explain why
+each step exists. People
+hold onto reasons way
+better than sequences.
+ANXIETY
+Twenty years of being
+told they're "bad with
+computers." Some have
+broken something and been
+blamed for it. It's the biggest
+barrier in the room, and
+it's entirely psychological.
+THE DISCUSSION-BASED MODEL. TAA DOES NOT LECTURE. EVER.
+Open with their problem, not your topic.
+"What's the thing about your phone that
+annoys you most? Go around." Everyone talks
+once in the first five minutes, and now you
+have the room's real agenda.
+Ask, don't tell. "Why do you think the
+manufacturer glued this in instead of using
+clips?" starts a better right-to-repair
+conversation than any speech you could
+give.
+Teach toward what they said. If four people
+said "storage full," that's your lead topic
+today, whatever your plan was.
+Let them answer each other. An explanation
+from a peer lands harder than one from an
+expert, and it turns attendees into volunteers.
+Close with commitments: "what are you
+going to try this week?"
+FIG. 05 · A CONVERSATION AROUND A TABLE WHERE
+THINGS ARE GETTING TAKEN APART
+An instructor coaching, hands off
+or browse files
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 4 · 1 4
+
+-- 14 of 20 --
+
+MODULE 4 · 4.3 TO 4.5 	SMALL WORDING CHANGES DECIDE WHO COMES BACK
+LANGUAGE RULES & HARD MOMENTS
+DON'T SAY 	SAY INSTEAD
+"It's easy" "It takes practice. Everybody fumbles this at
+first."
+"You just tap there" 	"Tap there." Delete the word "just" entirely.
+"Let me do it" 	"Try it. I'll talk you through it."
+"No, not that one" 	"Close. Try the one right above it."
+"I already explained that" 	Explain it again, differently, with no comment
+"For someone your age,
+you're doing great" "You're doing great"
+"Your phone is really old" "Your phone is a few generations back. Here's
+what that means for you."
+"Just" is the most common condescension in tech teaching.
+"You just go to settings" tells a struggling person that the thing
+beating them is trivial. Cut it from your vocabulary at the table.
+THE HARD MOMENTS
+"I'm too old for this." Don't argue and don't over-reassure; both feel dismissive. Point at
+the evidence: "You've used this phone for three years without anyone showing you how.
+That's not someone who can't learn. That's someone nobody ever taught."
+The person who was scammed. Stop what you're doing. No alarm, and never "how did
+you fall for that." These scams are built by professionals to be convincing. Help them
+change the password and turn on two-factor, their hands on the phone, not yours, and
+give them reportfraud.ftc.gov.
+The dominant talker. "Good, hold that thought, I want to come back to it. Margaret, what
+did you find?" Then call on the quiet people by name. And consider recruiting the talker;
+that energy is useful in the right seat.
+The person who came for something else. Loneliness, or a family that stopped answering
+tech questions. That's legitimate. The digital literacy track exists partly for this, and a
+chapter that only counts repairs misses most of its impact.
+W H A T N E V E R H A P P E N S A T A T A A W O R K S H O P
+Nobody gets laughed at · no question gets treated as obvious · no device gets taken
+without asking ("May I?", and hand it back screen facing them) · nobody gets told
+they're too old · no talking about attendees where they can hear · no accounts, photos,
+or messages get opened · no passcode gets written down · no device leaves the room.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 4 · 1 5
+
+-- 15 of 20 --
+
+MODULE 5 	2H READING + 1H PRACTICE 	KEEPING YOUR HANDS OFF OTHER PEOPLE'S WORK
+THE ESCALATION LADDER
+WHY FAILURE IS THE CURRICULUM
+Someone who watched you replace a battery learned that
+battery replacement is
+possible. Someone who replaced
+one themselves, badly, slowly, with two mistakes and one
+small panic, learned that they can replace a battery. Only
+the second one changes what they do after they go home.
+Anyone can follow twelve steps. A repairer is someone
+who can handle step seven going wrong. Recovery
+is the real skill, which is why people have to be
+allowed to fail in front of you, inside the safe boundary
+the practice-device policy draws.
+THE FAILURE MODE TO WATCH FOR
+Jumping straight to rung 7 because it's faster. It
+is faster. It's also the whole reason a workshop
+can feel busy and teach nobody anything.
+" J U S T F I X I T F O R M E "
+"I could do that in five minutes, but then next time you'd
+be right back here. Give me twenty and you'll be able
+to do it yourself." The line is capability, not willingness.
+Someone who physically can't hold tweezers gets
+help, narrated clearly, with written steps to take home.
+R1 	WAIT. Say nothing. Count to ten. Most fumbling sorts itself out, and the sorting-
+out is where the learning happens. New volunteers jump in after about two
+seconds. Train yourself out of it.
+R2 	ASK A QUESTION. "What's it doing?" · "What do you think is holding it?" · "What
+did the guide say about that corner?"
+R3 	DESCRIBE. "The tab is on the left edge, about an inch from the corner."
+R4 	POINT. At the spot. Still don't touch the device.
+R5 	DEMONSTRATE ON A DIFFERENT DEVICE. Show the motion on your own practice
+unit, then hand theirs back. This solves most of what's left, and almost nobody
+uses it enough.
+R6 	GUIDED TOUCH. "May I put my hand over yours so you can feel the pressure?"
+Ask first. Their hand stays on the tool.
+R7 	YOU TAKE OVER. Only for an active safety risk, or when going further will kill the
+device and the attendee asked you to. Announce it, narrate it, and hand it back
+the second it's past the hard part.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 5 · 1 6
+
+-- 16 of 20 --
+
+MODULE 5 · 5.3 TO 5.5 	A TWO-HOUR SESSION. ADAPT IT, BUT KEEP THE SHAPE.
+RUN-OF-SHOW & THE PRACTICE-DEVICE POLICY
+T-45 Setup: stations, lighting, cords taped down, fireproof container out,
+tools counted in, walker clearance checked
+T-15 Volunteer huddle. First-workshop volunteers get paired, never solo.
+The Lead makes the stop call.
+0:00 Doors. Greeter gets names, sign-in, acknowledgment form, and "what
+brought you in today?"
+0:10 Safety briefing. Every workshop. No exceptions. Two minutes, and
+nobody touches a tool before it happens.
+0:12
+Go-around: your name, plus the thing that annoys you most about
+your device. Write the list up where everyone can see it. That's your
+agenda.
+0:20 Station work. 2 to 4 attendees per instructor. Escalation ladder in
+effect.
+1:00 Cross-pollinate: one person from each station shares what surprised
+them. Five minutes.
+1:40 Hard stop on new disassembly. Close, test, account for everything. An
+open device at the end of a session goes home broken.
+1:50 Close-out: one thing you learned, one thing you'll try at home.
+Announce the next date.
+2:00 Teardown: tools counted out, batteries contained, room left better
+than you found it. That's how you keep the venue.
++7d 	Post-workshop report to TAA
+2 TO 4 ATTENDEES / INSTRUCTOR 	1 DEVICE / 1 TO 2 ATTENDEES
+GROUP BY DEVICE, NOT SKILL 	NERVOUS FIRST-TIMERS → DESKTOPS
+TIER 1 · PRACTICE DEVICES 	FULL HANDS-ON, ALWAYS
+Donated and scrap hardware the chapter owns. Attendees can take it
+apart, break it, and do it again, freely. All the invasive teaching happens
+here. Nobody's data, nobody's property, nobody's grief.
+TIER 2 · ATTENDEE DEVICES 	NON-INVASIVE ONLY
+Software, settings, backups, 2FA setup · battery health readings · external
+cleaning · port cleaning with a non-metal tool, powered off · diagnosis
+and a written recommendation.
+TIER 3 · OPENING AN ATTENDEE'S
+DEVICE
+ALL EIGHT, OR IT'S TIER 2 +
+REFERRAL
+1 · Lead is certified and has done this exact
+repair on a practice unit
+5 · Battery below 25%, or the repair doesn't
+go near it
+2 · Attendee was told out loud it may come
+back worse, and said yes anyway
+6 · Right part and right tools physically
+present
+3 · Data backed up, or the risk explicitly
+accepted
+7 · iFixit difficulty moderate or below
+4 · Signed acknowledgment on file 	8 · The attendee does the work; you coach
+Don't negotiate with yourself on this. The pressure to say yes will come from a nice
+person who really wants their phone fixed. That's exactly the situation the rule exists for.
+Why this exists, said plainly: a chapter lead is a volunteer who read a handbook. Fifty
+of those in fifty towns opening strangers' phones on demand gets you bricked devices,
+lost family photos, and eventually an injury. Any one of those with TAA's name on it
+costs us the relationships that make this whole thing run. Practice devices remove
+nearly all of that risk and almost none of the learning. That's a rare trade, and we take it.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	M O D U L E 5 · 1 7
+
+-- 17 of 20 --
+
+PART 7 	RUNNING YOUR CHAPTER 	THE VENUE IS YOUR MOST VALUABLE ASSET, AND IT'S ON LOAN
+THE FIRST NINETY DAYS
+DAYS 1 TO 30 · CERTIFY AND PREPARE
+→ Finish Modules 1 to 5, the knowledge check, and the
+certification
+→ Confirm the venue: room, recurring date, tables,
+power, storage
+→ Inventory target: 3 desktops, 3 laptops, 6 phones
+minimum
+→ Check every donated desktop for a BIOS lock
+→ Buy the fireproof container; find your battery
+recycling point
+→ Build the referral list; post TAA-template flyers
+DAYS 31 TO 60 · FIRST WORKSHOP + A SECOND
+PERSON
+→ Workshop 1: keep it small on purpose, 8 to 12 people,
+never thirty
+→ Report within seven days
+→ Find your Co-Lead: attendees who stayed late,
+venue volunteers. Start them on the handbook.
+→ Workshop 2
+DAYS 61 TO 90 · STABILIZE
+→ Workshop 3, and provisional becomes full charter
+→ Co-Lead certified
+→ Recruit 2 Repair Instructors + 1 Greeter
+→ Get a recurring date on the venue's own calendar.
+"Second Saturday every month" gets attendance.
+"Whenever we can book a room" doesn't.
+WHAT THE VENUE NEEDS FROM YOU, IN PRIORITY ORDER
+1 · Predictability. Same date,
+same room, same time. Can't
+make it? Tell them a week out,
+not the morning of.
+2 · Not being a problem. Room
+cleaner than you found it, no
+overruns, no trip hazards.
+3 · Attendance numbers, in
+writing, without being asked.
+Libraries justify their budgets
+with attendance. This one
+habit makes you their favorite
+program.
+4 · No liability surprises, no
+commerce. "Will you break
+patrons' property?" The
+practice-device policy is your
+answer; say it out loud. And
+nothing gets sold, ever.
+☐ OPEN ITEM · INSURANCE
+Lots of venues ask for a certificate
+of insurance naming them as
+additional insured. If that happens,
+don't improvise. Contact TAA
+immediately, and never tell a
+venue we're covered unless you've
+been told so in writing. TAA's
+real coverage position has to be
+stated here before this goes out.
+FIG. 06 · THE HOST VENUE: A ROOM,
+TABLES, AND A PUBLIC FRONT DOOR
+Your host venue
+or browse files
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	P A R T 7 · 1 8
+
+-- 18 of 20 --
+
+PART 7 · 7.3 TO 7.6 	YOUR JOB ISN'T TO EXIST. IT'S TO RUN A WORKSHOP EVERY MONTH.
+VOLUNTEERS, DEVICES, REPORTING
+RECRUITING VOLUNTEERS
+Your best source is your own attendees,
+especially anyone who starts helping
+the person next to them without being
+asked. Recruit those people on the spot.
+→ Retired engineers, technicians, electricians. Every
+town has them, and they're under-used
+→ Students who need service hours (they need the
+most coaching on Module 4)
+→ The library's volunteer pool, makerspaces, radio
+clubs
+Nobody works a station alone on their first workshop.
+Nobody handles batteries without Module 1. And check
+whether your venue requires background checks;
+many do, and it's their process, not yours to waive.
+SOURCING PRACTICE DEVICES
+→ Ask your attendees. The single best source. Every
+household has dead phones in a drawer, and people
+love having somewhere for them to go
+→ TAA's donated inventory (ask; logistics vary by
+distance)
+→ Library and town IT retirements
+→ Local repair shops' scrap bins, which often turns
+into a referral relationship both ways
+→ E-waste collection events (ask the organizer first)
+Wipe every donated device or pull the drive
+before it becomes teaching material. Skip
+this and you'll eventually hand someone
+a laptop with a stranger's tax returns on it.
+REPORTING
+Post-workshop report within seven days,
+every workshop. It takes ten minutes and
+it's a charter condition. It builds the dataset
+that proves the program works and gives
+TAA the numbers sponsors ask about.
+Report the bad ones too. A session where four
+people showed up and a repair failed is more
+useful to us than a session you never wrote
+up. We're not grading you on attendance.
+W I T H I N 2 4 H O U R S : any injury, property damage,
+battery event, data or privacy incident, venue
+complaint, or accusation against a volunteer.
+50 What "fifty chapters" actually means. A chapter counts once it's run three workshops and filed three reports. Not when someone
+gets approved, not when a toolkit ships. Thirty inactive chapters is worse than twelve active ones. If you're running out of steam,
+tell us; a chapter that asks for help is one we can help. A chapter that goes quiet is one we lose.
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 	P A R T 7 · 1 9
+
+-- 19 of 20 --
+
+PART 9 	THE GATE IS REAL, AND PASSING IT MEANS SOMETHING
+CERTIFICATION SUBMISSION
+SUBMIT ALL SIX ITEMS TOGETHER
+01 	Knowledge check: all 68 questions of Part 8, in writing, in your own words
+02 	Repair video, 5 to 8 minutes: one complete repair on a practice device, filmed
+straight through, hands visible. Mat in use, wrist strap clipped, fireproof container in
+frame for battery work, and the device powering on at the end. If something goes
+wrong, keep filming. A mistake handled calmly is better evidence than a flawless run.
+03 	Mock lesson video, 10 minutes: teach one genuine beginner. We count how many
+times you touched their device, and whether "just," "simply," or "easy" showed up. A
+technically perfect lesson where you did the work for them fails. That's the point.
+04 	Checkpoint evidence: the photos and short write-ups from all five module
+checkpoints
+05 	Your referral list, completed for your town
+06 	Chapter plan, one page: venue and contact, recurring date, inventory, container and
+disposal point, your Co-Lead prospect, and your first three workshop topics
+Also required: at least six completed iFixit guides across four device classes, tracked on your
+account, plus the foundation reading, from Tools Best Practices to the swollen-battery wiki.
+TAA SENDS BACK ONE OF FOUR RESULTS
+CERTIFIED
+Charter issued, provisional status. Schedule workshop 1.
+CERTIFIED WITH NOTES
+Approved, with specific fixes we read back to you before
+workshop 1.
+RESUBMIT
+Common, and not a rejection. It's usually the mock lesson;
+the escalation ladder is genuinely hard.
+NOT APPROVED
+We'll tell you exactly why, including when it's a fit issue
+instead of a skill issue.
+FULL HANDBOOK: PART 8 KNOWLEDGE CHECK · APPENDICES
+A TO F
+SAFETY SCRIPT · FORMS · CHECKLISTS · REFERRAL
+TEMPLATE · GLOSSARY
+T E C H A W A R E N E S S A S S O C I A T I O N · C H A P T E R R E P L I C A T I O N G U I D E V 1 . 0 · N O T F O R P U B L I C D I S T R I B U T I O N 	C E R T I F I C A T I O N · 2 0
+
+-- 20 of 20 --
+

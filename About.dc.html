@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>About — Tech Awareness Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,body{margin:0;padding:0;background:#F8F3F1;color:#2C3E50;font-family:'Poppins',sans-serif;}
+    a{color:#2C3E50;text-decoration:none;}
+    a:hover{color:#D22B42;}
+    ::selection{background:#FAC206;color:#181818;}
+    :focus-visible{outline:2px solid #0B7DA8;outline-offset:2px;}
+  </style>
+</helmet>
+
+<div style="min-width:1100px">
+<dc-import name="SiteNav" active="none" hint-size="100%,84px"></dc-import>
+
+<header style="padding:56px 56px 72px;max-width:1400px;margin:0 auto">
+  <div style="color:#D22B42;font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:20px">About</div>
+  <h1 style="font-size:clamp(3.5rem,7.5vw,6.875rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 28px;color:#181818">We got told no.<br><span style="margin-left:0.9em;color:#A87B00">We built it anyway.</span></h1>
+</header>
+
+<section data-screen-label="Origin stories" style="padding:0 56px 96px;max-width:1400px;margin:0 auto">
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;flex-wrap:wrap">
+    <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#0B7DA8">How it started — two true stories</div>
+    <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
+      <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm — which story leads, or run both</span>
+    </sc-if>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+    <div style="background:#E7E1DE;border-radius:24px;padding:40px">
+      <span style="display:inline-flex;background:#16C0FF;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px;margin-bottom:18px">The favor that grew</span>
+      <p style="font-size:1.063rem;line-height:1.7;margin:0">It started with fixing phones for friends. Then their friends. Then people we'd never met were showing up with cracked screens and dead batteries — and instead of fixing them for people, we started showing them how.</p>
+    </div>
+    <div style="background:#181818;color:#F8F3F1;border-radius:24px;padding:40px">
+      <span style="display:inline-flex;background:#FB4B5F;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px;margin-bottom:18px">The rejection</span>
+      <p style="font-size:1.063rem;line-height:1.7;margin:0">We pitched this as a school club. The school said no. So we skipped the club, filed for a 501(c)(3), and built it town by town instead. The "no" is the reason this is bigger than a classroom.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Philosophy" style="background:#2E2B25;color:#F8F3F1;padding:112px 56px">
+  <div style="max-width:1400px;margin:0 auto">
+    <h2 style="font-size:clamp(3.25rem,7vw,6.5rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 32px">Teach,<br><span style="margin-left:0.9em;color:#D22B42">don't fix-for.</span></h2>
+    <p style="font-size:1.125rem;line-height:1.7;max-width:620px;margin:0">We could fix your phone in ten minutes and you'd be back in six months. Instead we hand you the driver and sit next to you. It takes an hour. You never come back for the same problem — and usually, you come back to help someone else with theirs.</p>
+  </div>
+</section>
+
+<section data-screen-label="Why repair" style="padding:96px 56px;max-width:1400px;margin:0 auto">
+  <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#946D00;margin-bottom:16px">Why repair</div>
+  <blockquote style="margin:0 0 16px;font-size:clamp(1.875rem,3.5vw,3rem);font-weight:800;line-height:1.15;letter-spacing:-0.01em;color:#181818;max-width:900px">iFixit's manifesto puts it bluntly: "If you can't fix it, you don't own it."</blockquote>
+  <p style="font-size:0.813rem;opacity:0.6;margin:0 0 48px">— iFixit, <em>Self-Repair Manifesto</em>, CC BY-NC-SA 3.0. <a href="https://www.ifixit.com/Manifesto" style="font-weight:700;text-decoration:underline">Read the whole thing →</a></p>
+  <p style="font-size:1.063rem;line-height:1.7;max-width:640px;margin:0 0 48px">We'd put it our own way: everyone has a reasonable claim to open, understand, and fix the things they own. Here's what that gets you —</p>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+    <div style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:14px">
+      <span style="align-self:flex-start;background:#FAC206;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px">01</span>
+      <div style="font-size:1.375rem;font-weight:700">It's yours</div>
+      <p style="font-size:0.938rem;line-height:1.65;margin:0">Repair is independence, not just thrift. A device you can open is a device you actually own — not one you rent from whoever holds the parts and the passwords.</p>
+    </div>
+    <div style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:14px">
+      <span style="align-self:flex-start;background:#16C0FF;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px">02</span>
+      <div style="font-size:1.375rem;font-weight:700">It teaches you</div>
+      <p style="font-size:0.938rem;line-height:1.65;margin:0">Take a phone apart once and you understand it forever. Repair is the fastest honest way to learn how the things you use every day actually work.</p>
+    </div>
+    <div style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:14px">
+      <span style="align-self:flex-start;background:#FB4B5F;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px">03</span>
+      <div style="font-size:1.375rem;font-weight:700">It stays here</div>
+      <p style="font-size:0.938rem;line-height:1.65;margin:0">A repaired device skips the landfill, and its value stays in town — it still works, it multiplies through giveaways, and it keeps working for a neighbor.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="CTA" style="padding:0 56px 96px;max-width:1400px;margin:0 auto">
+  <div style="background:#181818;color:#F8F3F1;border-radius:24px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap">
+    <h2 style="font-size:2rem;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;margin:0">Sold<span style="color:#FAC206">?</span> Come open something.</h2>
+    <div style="display:flex;gap:14px">
+      <a href="Chapters.dc.html" style="background:#FAC206;color:#181818;padding:16px 32px;border-radius:999px;font-size:0.938rem;font-weight:700" style-hover="background:#F8F3F1;color:#181818">Find a workshop →</a>
+      <a href="Members.dc.html" style="border:2px solid #F8F3F1;color:#F8F3F1;padding:14px 32px;border-radius:999px;font-size:0.938rem;font-weight:600" style-hover="background:#F8F3F1;color:#181818">Meet the team →</a>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showFlags: this.props.showFlags ?? true };
+  }
+}
+</script>
+</body>
+</html>

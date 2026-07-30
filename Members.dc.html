@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Members — Tech Awareness Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <style>
+    html,body{margin:0;padding:0;background:#F8F3F1;color:#2C3E50;font-family:'Poppins',sans-serif;}
+    a{color:#2C3E50;text-decoration:none;}
+    a:hover{color:#D22B42;}
+    ::selection{background:#FAC206;color:#181818;}
+    :focus-visible{outline:2px solid #0B7DA8;outline-offset:2px;}
+  </style>
+</helmet>
+
+<div style="min-width:1100px">
+<dc-import name="SiteNav" active="members" hint-size="100%,84px"></dc-import>
+
+<sc-if value="{{ gridView }}" hint-placeholder-val="{{ true }}">
+  <header data-screen-label="Members grid" style="padding:56px 56px 48px;max-width:1400px;margin:0 auto">
+    <h1 style="font-size:clamp(3.5rem,7.5vw,6.875rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 28px;color:#181818">Meet the<br><span style="margin-left:0.9em;color:#D22B42">members.</span></h1>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <p style="font-size:1.125rem;line-height:1.65;max-width:540px;margin:0">One HQ, four chapters, and everyone fixes things on a school night. Tap a face to read what they actually do.</p>
+      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm roster + drop real headshots</span>
+      </sc-if>
+    </div>
+  </header>
+
+  <sc-for list="{{ groups }}" as="g" hint-placeholder-count="5">
+    <section style="padding:0 56px;max-width:1400px;margin:0 auto">
+      <div style="border-top:1px solid rgba(44,62,80,0.14);padding:48px 0 72px">
+        <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:44px">
+          <h2 style="font-size:1.75rem;font-weight:800;letter-spacing:-0.01em;margin:0;color:#181818">{{ g.title }}</h2>
+          <span style="font-size:0.875rem;font-weight:600;opacity:0.55">{{ g.sub }}</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat({{ cols }},1fr);gap:56px 40px">
+          <sc-for list="{{ g.people }}" as="m" hint-placeholder-count="3">
+            <sc-if value="{{ m.person }}" hint-placeholder-val="{{ true }}">
+              <a href="{{ m.href }}" onClick="{{ m.open }}" style="display:flex;flex-direction:column;align-items:center;text-align:center;color:#2C3E50;text-decoration:none;cursor:pointer" style-hover="color:#2C3E50">
+                <div style="width:170px;height:170px;border-radius:999px;padding:6px;border:2px solid transparent;transition:border-color 0.25s,transform 0.25s" style-hover="border-color:{{ m.accent }};transform:translateY(-4px)">
+                  <image-slot id="{{ m.slot }}" shape="circle" placeholder="{{ m.ph }}" src="{{ m.src }}" style="width:100%;height:100%"></image-slot>
+                </div>
+                <span style="font-size:1.25rem;font-weight:700;color:#181818;margin-top:20px">{{ m.name }}</span>
+                <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:{{ m.roleColor }};margin-top:6px">{{ m.role }}</span>
+                <span style="font-size:0.875rem;line-height:1.55;opacity:0.7;max-width:280px;margin-top:10px">{{ m.does }}</span>
+              </a>
+            </sc-if>
+            <sc-if value="{{ m.vacant }}" hint-placeholder-val="{{ false }}">
+              <a href="GetInvolved.dc.html" style="display:flex;flex-direction:column;align-items:center;text-align:center;color:#2C3E50;text-decoration:none" style-hover="color:#2C3E50">
+                <div style="width:170px;height:170px;border-radius:999px;border:2px dashed rgba(44,62,80,0.3);display:flex;align-items:center;justify-content:center;font-size:0.813rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;transition:border-color 0.25s" style-hover="border-color:#D22B42">Open</div>
+                <span style="font-size:1.25rem;font-weight:700;color:#181818;margin-top:20px">Open role</span>
+                <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:{{ m.roleColor }};margin-top:6px">{{ m.role }}</span>
+                <span style="font-size:0.875rem;line-height:1.55;opacity:0.7;max-width:280px;margin-top:10px">This seat needs a student. Get involved →</span>
+              </a>
+            </sc-if>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+  </sc-for>
+</sc-if>
+
+<sc-if value="{{ profileView }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="Member profile" style="padding:40px 56px 112px;max-width:1400px;margin:0 auto">
+    <a href="#" onClick="{{ back }}" style="display:inline-flex;align-items:center;gap:8px;font-size:0.875rem;font-weight:600;color:#2C3E50" style-hover="color:#D22B42">← All members</a>
+    <div style="display:grid;grid-template-columns:320px 1fr;gap:72px;align-items:start;margin-top:48px">
+      <div style="width:320px;height:320px">
+        <image-slot id="{{ pSlot }}" shape="circle" placeholder="{{ pPh }}" src="{{ pSrc }}" style="width:100%;height:100%"></image-slot>
+      </div>
+      <div>
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:{{ pColor }};margin-bottom:14px">{{ pRoleLine }}</div>
+        <h1 style="font-size:clamp(2.75rem,5vw,4.5rem);font-weight:800;line-height:1;letter-spacing:-0.02em;margin:0 0 24px;color:#181818">{{ pName }}</h1>
+        <p style="font-size:1.125rem;line-height:1.7;max-width:600px;margin:0 0 40px">{{ pBio }}</p>
+        <sc-if value="{{ pHasWork }}" hint-placeholder-val="{{ false }}">
+          <div style="border-top:1px solid rgba(44,62,80,0.14);padding-top:32px;margin-bottom:40px;max-width:640px">
+            <div style="font-size:1.125rem;font-weight:700;color:#181818;margin-bottom:20px">{{ pWorkHeading }}</div>
+            <div style="display:flex;flex-direction:column;gap:18px">
+              <sc-for list="{{ pWork }}" as="w" hint-placeholder-count="3">
+                <div style="display:grid;grid-template-columns:180px 1fr;gap:20px;align-items:baseline">
+                  <span style="font-size:0.875rem;font-weight:700;color:{{ pColor }}">{{ w.t }}</span>
+                  <span style="font-size:0.938rem;line-height:1.6;opacity:0.85">{{ w.d }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-bottom:28px"><span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">{{ pFlagText }}</span></div>
+        </sc-if>
+        <div style="display:flex;align-items:center;gap:16px">
+          <a href="Contact.dc.html" style="background:#181818;color:#F8F3F1;padding:14px 32px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">Get in touch</a>
+          <a href="{{ nextHref }}" onClick="{{ openNext }}" style="font-size:0.875rem;font-weight:600;color:#2C3E50" style-hover="color:#D22B42">Next: {{ nextName }} →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}, &quot;columns&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [3, 4], &quot;default&quot;: 3, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Layout&quot;}}">
+class Component extends DCLogic {
+  state = { open: null };
+  chapters = [
+    { key: 'ma', title: 'TAA MA', sub: 'Headquarters — Shrewsbury' },
+    { key: 'westborough', title: 'TAA Westborough', sub: 'Chapter' },
+    { key: 'worcester', title: 'TAA Worcester', sub: 'Chapter' },
+    { key: 'grafton', title: 'TAA Grafton', sub: 'Chapter' },
+    { key: 'southgate', title: 'Southgate Senior Center', sub: 'Senior Center' },
+  ];
+  data = [
+    { id: 'ronit', chapter: 'ma', name: 'Ronit Sharma', role: 'Executive Director', accent: '#FAC206',
+      does: 'Strategy, partners, and the inbox — keeps the whole 501(c)(3) moving.',
+      bio: 'Runs the whole thing — strategy, partners, and the inbox. The reason a school-club rejection turned into a 501(c)(3).',
+      work: [
+        { t: 'Partnerships', d: 'First call for libraries, sponsors, and town officials — and the signature on every agreement.' },
+        { t: 'Nonprofit paperwork', d: 'Filings, insurance, and everything that keeps the 501(c)(3) status real.' },
+        { t: 'Chapter approvals', d: 'Reviews every Start-a-Chapter application and issues the access codes for chapter certification.' },
+      ] },
+    { id: 'tanay', chapter: 'ma', name: 'Tanay Mangal', role: 'Programs & Education Lead', accent: '#0B7DA8',
+      photo: 'uploads/TanayMangal_shrewsbury.PNG',
+      does: 'Owns the 12-week curriculum and what happens at every bench.',
+      bio: 'Owns the 12-week curriculum and what happens at every bench, every week, in every chapter.',
+      work: [
+        { t: 'Curriculum', d: 'Writes and updates the 12-week repair curriculum every chapter runs from.' },
+        { t: 'Workshop nights', d: 'Plans each session — which devices, which skills, which benches — before anyone shows up.' },
+        { t: 'Certification', d: 'Maintains the 9-module chapter certification content, flashcards and flowcharts included.' },
+      ] },
+    { id: 'nathan', chapter: 'ma', name: 'Nathan Anwin', role: 'Operations & Logistics Lead', accent: '#D22B42',
+      photo: 'uploads/NathanAnwin_shrewsbury.jpeg',
+      does: 'Toolkits, devices, venues, drives — gets things where they need to be.',
+      bio: 'Toolkits, devices, venues, drives — if it had to be somewhere on a Tuesday night, Nathan got it there.',
+      work: [
+        { t: 'Toolkits', d: 'Builds and restocks every bench toolkit — drivers, spudgers, spare parts.' },
+        { t: 'Collection drives', d: 'Runs the device drives behind the 442 devices collected so far.' },
+        { t: 'Venues', d: 'Books and sets up the rooms in Shrewsbury, Grafton, Westborough, and Worcester.' },
+      ] },
+    { id: 'ekansh', chapter: 'ma', name: 'Ekansh Jain', role: 'Finance & Impact Lead', accent: '#0B7DA8',
+      photo: 'uploads/EkanshJain_shrewsbury.jpeg',
+      does: 'Counts the dollars and the pounds of e-waste — honestly.',
+      bio: 'Counts the dollars and the pounds of e-waste — honestly. Every stat on the homepage goes through him first.',
+      work: [
+        { t: 'Budget', d: 'Tracks every donation in and every toolkit dollar out.' },
+        { t: 'Impact numbers', d: 'Weighs, counts, and verifies the stats — 1,545 lbs diverted, 120+ repairs — before they go public.' },
+        { t: 'Reporting', d: 'Writes the reports partners and sponsors see at the end of each season.' },
+      ] },
+    { id: 'suhrit', chapter: 'ma', name: 'Suhrit Ghosh', role: 'Outreach & Community Lead', accent: '#D22B42',
+      photo: 'uploads/SuhritGhosh_shrewsbury.jpeg',
+      does: 'Libraries, senior centers, and the feed — gets every town to show up.',
+      bio: 'Gets every town to show up — libraries, senior centers, and the feed. If you found us online, that was him.',
+      work: [
+        { t: 'Community venues', d: 'Keeps the library and senior-center relationships that host our workshops.' },
+        { t: 'New chapters', d: 'Finds and recruits the students who want to start a chapter in their town.' },
+        { t: 'Instagram', d: 'Shoots and posts the workshop timelapses and bench photos on the feed.' },
+      ] },
+    { id: 'howie', chapter: 'westborough', name: 'Howie Cao', role: 'Chapter Lead', accent: '#FAC206',
+      photo: 'uploads/HowieCao_westborough_chapterlead.jpeg',
+      bio: 'Runs the Westborough chapter — the benches, the people, and the weekly workshop night.' },
+    { id: 'atharv', chapter: 'westborough', name: 'Atharv Mishra', role: 'Programs Lead', accent: '#0B7DA8',
+      photo: 'uploads/AtharvMishra_westborough_programslead.jpeg',
+      bio: 'Runs the 12-week curriculum at the Westborough benches.' },
+    { id: 'cullen', chapter: 'westborough', name: 'Cullen Bautista', role: 'Operations & Outreach Lead', accent: '#D22B42',
+      photo: 'uploads/CullenBautista_westborough_outreachlead.jpeg',
+      bio: 'Toolkits and turnout — runs both operations and outreach for Westborough.' },
+    { id: 'niti', chapter: 'worcester', name: 'Niti Tyagi', role: 'Chapter Lead', accent: '#FAC206',
+      photo: 'uploads/NitiTyagi_northborough_chapterlead.jpeg',
+      bio: 'Runs the Worcester chapter — the benches, the people, and the weekly workshop night.' },
+    { id: 'bhoomi', chapter: 'worcester', name: 'Bhoomi Prashanth', role: 'Programs Lead', accent: '#0B7DA8',
+      photo: 'uploads/BhoomiPrashanth_northbrough_programslead.jpeg',
+      bio: 'Runs the 12-week curriculum at the Worcester benches.' },
+    { id: 'dhriti', chapter: 'worcester', name: 'Dhriti Krishnaswamy', role: 'Outreach Lead', accent: '#D22B42',
+      photo: 'uploads/DhritiKrishnaswamy_northborough_operations%3Aoutreachlead.jpeg',
+      bio: 'Gets Worcester to show up — venues, flyers, and new members.' },
+    { id: 'ram', chapter: 'grafton', name: 'Ram Kondapalli', role: 'Chapter Lead', accent: '#FAC206',
+      photo: 'uploads/RamKondapalli_grafton_chapterlead.jpg',
+      bio: 'Runs the Grafton chapter — the benches, the people, and the weekly workshop night.' },
+    { id: 'puneeth', chapter: 'grafton', name: 'Puneeth Nuna', role: 'Programs Lead', accent: '#0B7DA8',
+      photo: 'uploads/PuneethNunna_grafton_programslead.jpeg',
+      bio: 'Runs the 12-week curriculum at the Grafton benches.' },
+    { id: 'kevin', chapter: 'grafton', name: 'Kevin Lui', role: 'Operations Lead', accent: '#D22B42',
+      photo: 'uploads/KevinLee_grafton_operationslead.JPG',
+      bio: 'Toolkits, devices, and room setup for the Grafton workshop nights.' },
+    { id: 'param', chapter: 'grafton', name: 'Param Tyagi', role: 'Outreach Lead', accent: '#FAC206',
+      photo: 'uploads/ParamTyagi_grafton.jpeg',
+      bio: 'Gets Grafton to show up — venues, flyers, and new members.' },
+    { id: 'howie', chapter: 'southgate', name: 'Howie Cao', role: 'Chapter Lead', accent: '#FAC206',
+      photo: 'uploads/HowieCao_westborough_chapterlead.jpeg',
+      bio: 'Runs the Westborough chapter — the benches, the people, and the weekly workshop night.' },
+    { id: 'atharv', chapter: 'southgate', name: 'Atharv Mishra', role: 'Programs Lead', accent: '#0B7DA8',
+      photo: 'uploads/AtharvMishra_westborough_programslead.jpeg',
+      bio: 'Runs the 12-week curriculum at the Westborough benches.' },
+    { id: 'cullen', chapter: 'southgate', name: 'Cullen Bautista', role: 'Operations & Outreach Lead', accent: '#D22B42',
+      photo: 'uploads/CullenBautista_westborough_outreachlead.jpeg',
+      bio: 'Toolkits and turnout — runs both operations and outreach for Westborough.' },
+  ];
+  componentDidMount() {
+    this.syncHash = () => {
+      const id = location.hash.replace('#', '');
+      this.setState({ open: this.data.some(d => d.id === id) ? id : null });
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener('hashchange', this.syncHash);
+    this.syncHash();
+  }
+  componentWillUnmount() { window.removeEventListener('hashchange', this.syncHash); }
+  go(id, e) { if (e) e.preventDefault(); location.hash = id || ''; }
+  txt(c) { return c === '#FAC206' ? '#8F6B00' : c; }
+  renderVals() {
+    const people = this.data.filter(d => !d.vacant);
+    const sel = people.find(d => d.id === this.state.open);
+    const next = sel ? people[(people.indexOf(sel) + 1) % people.length] : null;
+    const chTitle = sel ? this.chapters.find(c => c.key === sel.chapter).title : '';
+    return {
+      showFlags: this.props.showFlags ?? true,
+      cols: this.props.columns ?? 3,
+      gridView: !sel, profileView: !!sel,
+      groups: this.chapters.map(c => ({
+        title: c.title, sub: c.sub,
+        people: this.data.filter(d => d.chapter === c.key).map(d => d.vacant
+          ? { vacant: true, person: false, role: d.role, roleColor: this.txt(d.accent) }
+          : {
+              person: true, vacant: false,
+              name: d.name, role: d.role, does: d.does || '', accent: d.accent, roleColor: this.txt(d.accent),
+              slot: 'team-' + d.id, ph: 'Drop ' + d.name.split(' ')[0] + "'s photo", src: d.photo || '',
+              href: '#' + d.id, open: (e) => this.go(d.id, e),
+            }),
+      })),
+      pSlot: sel ? 'team-' + sel.id : '', pPh: sel ? 'Drop ' + sel.name.split(' ')[0] + "'s photo" : '',
+      pSrc: sel ? (sel.photo || '') : '',
+      pName: sel ? sel.name : '',
+      pFlagText: sel ? 'Confirm bio with ' + sel.name.split(' ')[0] : '',
+      pRoleLine: sel ? sel.role + ' · ' + chTitle : '',
+      pColor: sel ? this.txt(sel.accent) : '#2C3E50',
+      pBio: sel ? sel.bio : '',
+      pHasWork: !!(sel && sel.work), pWork: sel && sel.work ? sel.work : [],
+      pWorkHeading: sel ? 'What ' + sel.name.split(' ')[0] + ' does' : '',
+      nextName: next ? next.name : '', nextHref: next ? '#' + next.id : '#',
+      openNext: (e) => next && this.go(next.id, e),
+      back: (e) => this.go('', e),
+    };
+  }
+}
+</script>
+</body>
+</html>

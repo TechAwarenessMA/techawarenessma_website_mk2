@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Contact — Tech Awareness Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,body{margin:0;padding:0;background:#F8F3F1;color:#2C3E50;font-family:'Poppins',sans-serif;}
+    a{color:#2C3E50;text-decoration:none;}
+    a:hover{color:#D22B42;}
+    ::selection{background:#FAC206;color:#181818;}
+    :focus-visible{outline:2px solid #0B7DA8;outline-offset:2px;}
+  </style>
+</helmet>
+
+<div style="min-width:1100px">
+<dc-import name="SiteNav" active="none" hint-size="100%,84px"></dc-import>
+
+<header style="padding:56px 56px 72px;max-width:1400px;margin:0 auto">
+  <div style="color:#946D00;font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:20px">Contact</div>
+  <h1 style="font-size:clamp(3.5rem,7.5vw,6.875rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 28px;color:#181818">Say hi<span style="color:#D22B42">.</span></h1>
+  <p style="font-size:1.125rem;line-height:1.65;max-width:520px;margin:0">A human answers all three of these. Usually the same day.</p>
+</header>
+
+<section data-screen-label="Contact cards" style="padding:0 56px 96px;max-width:1400px;margin:0 auto">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:28px">
+    <a href="mailto:contact@techawarenessma.com" style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px" style-hover="background:#dcd4d0">
+      <span style="align-self:flex-start;background:#FB4B5F;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px">Everything else</span>
+      <span style="font-size:1.25rem;font-weight:700;word-break:break-all">contact@techawarenessma.com</span>
+      <span style="font-size:0.875rem;opacity:0.7">Workshops, volunteering, devices, questions.</span>
+    </a>
+    <a href="mailto:ronit@techawarenessma.com" style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px" style-hover="background:#dcd4d0">
+      <span style="align-self:flex-start;background:#FAC206;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px">Partnerships & chapters</span>
+      <span style="font-size:1.25rem;font-weight:700;word-break:break-all">ronit@techawarenessma.com</span>
+      <span style="font-size:0.875rem;opacity:0.7">Ronit Sharma, Executive Director.</span>
+    </a>
+    <a href="mailto:tanay@techawarenessma.com" style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px" style-hover="background:#dcd4d0">
+      <span style="align-self:flex-start;background:#16C0FF;color:#181818;font-size:0.688rem;font-weight:700;letter-spacing:0.1em;padding:4px 12px;border-radius:999px">Programs & curriculum</span>
+      <span style="font-size:1.25rem;font-weight:700;word-break:break-all">tanay@techawarenessma.com</span>
+      <span style="font-size:0.875rem;opacity:0.7">Tanay Mangal, Programs & Education.</span>
+    </a>
+  </div>
+  <div style="background:#181818;color:#F8F3F1;border-radius:24px;padding:36px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+      <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#FAC206">Mail</span>
+      <span style="font-size:1.063rem;font-weight:600">609 Main St, Shrewsbury, MA 01545</span>
+      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.563rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px">Confirm address</span>
+      </sc-if>
+    </div>
+    <span style="font-size:0.875rem;opacity:0.6">Workshop visits: just show up — see <a href="Chapters.dc.html" style="color:#F8F3F1;text-decoration:underline">Chapters</a>.</span>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showFlags: this.props.showFlags ?? true };
+  }
+}
+</script>
+</body>
+</html>
