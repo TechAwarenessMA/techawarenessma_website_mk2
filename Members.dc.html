@@ -30,9 +30,6 @@
     <h1 style="font-size:clamp(3.5rem,7.5vw,6.875rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 28px;color:#181818">Meet the<br><span style="margin-left:0.9em;color:#D22B42">members.</span></h1>
     <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
       <p style="font-size:1.125rem;line-height:1.65;max-width:540px;margin:0">One HQ, four chapters, and everyone fixes things on a school night. Tap a face to read what they actually do.</p>
-      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm roster + drop real headshots</span>
-      </sc-if>
     </div>
   </header>
 
@@ -94,9 +91,6 @@
             </div>
           </div>
         </sc-if>
-        <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ false }}">
-          <div style="margin-bottom:28px"><span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">{{ pFlagText }}</span></div>
-        </sc-if>
         <div style="display:flex;align-items:center;gap:16px">
           <a href="Contact.dc.html" style="background:#181818;color:#F8F3F1;padding:14px 32px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">Get in touch</a>
           <a href="{{ nextHref }}" onClick="{{ openNext }}" style="font-size:0.875rem;font-weight:600;color:#2C3E50" style-hover="color:#D22B42">Next: {{ nextName }} →</a>
@@ -106,10 +100,10 @@
   </section>
 </sc-if>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}, &quot;columns&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [3, 4], &quot;default&quot;: 3, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Layout&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;columns&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [3, 4], &quot;default&quot;: 3, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Layout&quot;}}">
 class Component extends DCLogic {
   state = { open: null };
   chapters = [
@@ -120,7 +114,7 @@ class Component extends DCLogic {
     { key: 'southgate', title: 'Southgate Senior Center', sub: 'Senior Center' },
   ];
   data = [
-    { id: 'ronit', chapter: 'ma', name: 'Ronit Sharma', role: 'Executive Director', accent: '#FAC206',
+    { id: 'ronit', chapter: 'ma', name: 'Ronit Sharma', role: 'Executive Director', accent: '#FAC206', photo: 'uploads/RonitSharma_ExecutiveDirector.JPG',
       does: 'Strategy, partners, and the inbox — keeps the whole 501(c)(3) moving.',
       bio: 'Runs the whole thing — strategy, partners, and the inbox. The reason a school-club rejection turned into a 501(c)(3).',
       work: [
@@ -222,7 +216,6 @@ class Component extends DCLogic {
     const next = sel ? people[(people.indexOf(sel) + 1) % people.length] : null;
     const chTitle = sel ? this.chapters.find(c => c.key === sel.chapter).title : '';
     return {
-      showFlags: this.props.showFlags ?? true,
       cols: this.props.columns ?? 3,
       gridView: !sel, profileView: !!sel,
       groups: this.chapters.map(c => ({
@@ -239,7 +232,6 @@ class Component extends DCLogic {
       pSlot: sel ? 'team-' + sel.id : '', pPh: sel ? 'Drop ' + sel.name.split(' ')[0] + "'s photo" : '',
       pSrc: sel ? (sel.photo || '') : '',
       pName: sel ? sel.name : '',
-      pFlagText: sel ? 'Confirm bio with ' + sel.name.split(' ')[0] : '',
       pRoleLine: sel ? sel.role + ' · ' + chTitle : '',
       pColor: sel ? this.txt(sel.accent) : '#2C3E50',
       pBio: sel ? sel.bio : '',

@@ -32,16 +32,12 @@
         <a href="mailto:contact@techawarenessma.com" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">contact@techawarenessma.com</a>
         <a href="mailto:ronit@techawarenessma.com" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">ronit@techawarenessma.com</a>
         <a href="mailto:tanay@techawarenessma.com" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">tanay@techawarenessma.com</a>
-        <div style="display:flex;align-items:center;gap:10px;margin-top:8px;opacity:0.7">609 Main St, Shrewsbury, MA 01545
-          <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-            <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.563rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px">Confirm</span>
-          </sc-if>
-        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:8px;opacity:0.7">609 Main St, Shrewsbury, MA 01545</div>
         <a href="https://www.instagram.com/techawarenessma" style="color:#F8F3F1;text-decoration:none;margin-top:4px" style-hover="color:#FAC206">@techawarenessma ↗</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:10px;font-size:0.875rem">
         <div style="font-size:0.688rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#FAC206">Site</div>
-        <a href="Home.dc.html" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">Home</a>
+        <a href="index.html" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">Home</a>
         <a href="Programs.dc.html" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">Programs & Workshops</a>
         <a href="Chapters.dc.html" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">Chapters</a>
         <a href="StartChapter.dc.html" style="color:#F8F3F1;text-decoration:none" style-hover="color:#FAC206">Start a Chapter</a>
@@ -73,12 +69,11 @@
   </div>
 </footer>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1200, &quot;height&quot;: 760}, &quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1200, &quot;height&quot;: 760}}">
 class Component extends DCLogic {
   nlRef = React.createRef();
   renderVals() {
     return {
-      showFlags: this.props.showFlags ?? true,
       nlRef: this.nlRef,
       nlSubmit: () => {
         const email = (this.nlRef.current && this.nlRef.current.value) || '';

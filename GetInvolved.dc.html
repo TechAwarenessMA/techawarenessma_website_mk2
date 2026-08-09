@@ -80,21 +80,18 @@
     <div>
       <h2 style="font-size:2rem;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;margin:0 0 12px">No application form<span style="color:#D22B42">.</span></h2>
       <p style="font-size:0.938rem;line-height:1.65;margin:0 0 10px;opacity:0.8;max-width:520px">Email us your town and what you want to do. A human writes back — usually the same day.</p>
-      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm — build an application form, or keep email-only?</span>
-      </sc-if>
     </div>
     <a href="mailto:contact@techawarenessma.com?subject=Volunteering" style="background:#F8F3F1;color:#181818;padding:18px 36px;border-radius:999px;font-size:1rem;font-weight:700;white-space:nowrap" style-hover="background:#FAC206;color:#181818">contact@techawarenessma.com →</a>
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   renderVals() {
-    return { showFlags: this.props.showFlags ?? true };
+    return {};
   }
 }
 </script>

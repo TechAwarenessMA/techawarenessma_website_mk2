@@ -52,21 +52,18 @@
     <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
       <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#FAC206">Mail</span>
       <span style="font-size:1.063rem;font-weight:600">609 Main St, Shrewsbury, MA 01545</span>
-      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.563rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px">Confirm address</span>
-      </sc-if>
     </div>
     <span style="font-size:0.875rem;opacity:0.6">Workshop visits: just show up — see <a href="Chapters.dc.html" style="color:#F8F3F1;text-decoration:underline">Chapters</a>.</span>
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   renderVals() {
-    return { showFlags: this.props.showFlags ?? true };
+    return {};
   }
 }
 </script>

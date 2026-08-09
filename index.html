@@ -34,9 +34,6 @@
   <div style="display:grid;grid-template-columns:520px 1fr;gap:64px;align-items:end">
     <div>
       <p style="font-size:1.125rem;line-height:1.65;margin:0 0 10px">We run free, hands-on workshops that teach people — especially seniors and first-time repairers — how to fix their own devices, stay safe online, and keep usable electronics out of landfills.</p>
-      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:24px">Confirm — mission wording</span>
-      </sc-if>
       <div style="display:flex;gap:14px;margin-top:18px">
         <a href="Chapters.dc.html" style="background:#181818;color:#F8F3F1;padding:16px 32px;border-radius:999px;font-size:0.938rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">Find your workshop</a>
         <a href="Donate.dc.html" style="border:2px solid #181818;color:#181818;padding:14px 32px;border-radius:999px;font-size:0.938rem;font-weight:600" style-hover="background:#181818;color:#F8F3F1">Donate</a>
@@ -67,9 +64,6 @@
       <div style="border-left:1px solid rgba(248,243,241,0.14);padding:8px 28px 4px">
         <div data-count="{{ workshops }}" style="font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:3.25rem;font-weight:600;letter-spacing:-0.02em;line-height:1;color:#FAC206">{{ workshops }}</div>
         <div style="font-size:0.813rem;line-height:1.5;color:rgba(248,243,241,0.6);margin-top:12px">Workshops running</div>
-        <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-          <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.563rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-top:10px">Build req — auto +4/week</span>
-        </sc-if>
       </div>
       <div style="border-left:1px solid rgba(248,243,241,0.14);padding:8px 28px 4px">
         <div data-count="100" data-suffix="+" style="font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:3.25rem;font-weight:600;letter-spacing:-0.02em;line-height:1;color:#16C0FF">100+</div>
@@ -230,9 +224,6 @@
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px">
       <a href="https://www.instagram.com/techawarenessma" style="background:#181818;color:#F8F3F1;padding:14px 28px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">Follow @techawarenessma ↗</a>
-      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Build note — swap for live Instagram embed</span>
-      </sc-if>
     </div>
   </div>
   <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px">
@@ -265,12 +256,10 @@
       <h2 style="font-size:2.25rem;font-weight:800;line-height:1.1;letter-spacing:-0.01em;text-transform:uppercase;margin:0 0 16px;color:#181818">Donations are tax-deductible<span style="color:#A87B00">.</span></h2>
       <p style="font-size:0.938rem;line-height:1.65;margin:0 0 16px">501(c)(3) status: granted. And here's the part donors like: when a donated device can't be refurbished, we resell it for parts — and the proceeds fund the program directly.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <span style="border:1px solid #2C3E50;border-radius:999px;padding:8px 16px;font-size:0.813rem;font-weight:600">$25 — parts bin</span>
-        <span style="border:1px solid #2C3E50;border-radius:999px;padding:8px 16px;font-size:0.813rem;font-weight:600">$50 — repair kit</span>
-        <span style="border:1px solid #2C3E50;border-radius:999px;padding:8px 16px;font-size:0.813rem;font-weight:600">$120 — full bench</span>
-        <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-          <span style="display:inline-flex;align-items:center;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm tiers</span>
-        </sc-if>
+        <span style="border:1px solid #2C3E50;border-radius:999px;padding:8px 16px;font-size:0.813rem;font-weight:600">$150 — start a chapter</span>
+        <span style="border:1px solid #2C3E50;border-radius:999px;padding:8px 16px;font-size:0.813rem;font-weight:600">$250 — an e-waste drive</span>
+        <span style="border:1px solid #2C3E50;border-radius:999px;padding:8px 16px;font-size:0.813rem;font-weight:600">$500 — 5 new chapters</span>
+        <span style="border:1px solid #2C3E50;border-radius:999px;padding:8px 16px;font-size:0.813rem;font-weight:600">$1,000 — 10 new chapters</span>
       </div>
     </div>
     <div style="border:2px dashed #2C3E50;border-radius:16px;padding:40px;text-align:center">
@@ -280,10 +269,10 @@
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}, &quot;workshopsCount&quot;: {&quot;editor&quot;: &quot;int&quot;, &quot;default&quot;: 24, &quot;min&quot;: 0, &quot;max&quot;: 500, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;workshopsCount&quot;: {&quot;editor&quot;: &quot;int&quot;, &quot;default&quot;: 24, &quot;min&quot;: 0, &quot;max&quot;: 500, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Content&quot;}}">
 class Component extends DCLogic {
   state = { sel: 'driver', videoSrc: '' };
   statsRef = React.createRef();
@@ -330,7 +319,6 @@ class Component extends DCLogic {
         const email = (this.nlRef.current && this.nlRef.current.value) || '';
         window.location.href = 'mailto:contact@techawarenessma.com?subject=' + encodeURIComponent('Newsletter signup') + '&body=' + encodeURIComponent('Please add me to the updates list: ' + email);
       },
-      showFlags: this.props.showFlags ?? true,
       workshops: this.props.workshopsCount ?? 24,
       statsRef: this.statsRef,
       selName: sel.name, selWhat: sel.what, selWhy: sel.why,

@@ -28,9 +28,6 @@
   <div style="color:#0B7DA8;font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:20px">Privacy policy</div>
   <h1 style="font-size:clamp(3rem,6vw,5.5rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 24px;color:#181818">Your data,<br><span style="margin-left:0.9em;color:#D22B42">plainly.</span></h1>
   <p style="font-size:1.125rem;line-height:1.65;max-width:600px;margin:0 0 12px">We're a student-run nonprofit, not an ad company. Here's everything we collect, in plain language — this covers techawarenessma.com and our two apps, Teardown and Susu.</p>
-  <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-    <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Build note — link this page from teardown.* and susu.* footers too</span>
-  </sc-if>
 </header>
 
 <section data-screen-label="Policy" style="padding:24px 56px 96px;max-width:1400px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
@@ -57,13 +54,13 @@
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,700px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,700px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   renderVals() {
-    return { showFlags: this.props.showFlags ?? true };
+    return {};
   }
 }
 </script>

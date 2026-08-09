@@ -42,20 +42,17 @@
     </div>
     <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
       <a href="mailto:ronit@techawarenessma.com?subject=Research%20inquiry" style="display:inline-flex;background:#181818;color:#F8F3F1;padding:14px 28px;border-radius:999px;font-size:0.875rem;font-weight:600" style-hover="background:#D22B42;color:#F8F3F1">Request the paper →</a>
-      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm what's shareable — full paper, abstract, or headline finding</span>
-      </sc-if>
     </div>
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   renderVals() {
-    return { showFlags: this.props.showFlags ?? true };
+    return {};
   }
 }
 </script>

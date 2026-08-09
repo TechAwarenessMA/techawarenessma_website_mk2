@@ -113,10 +113,10 @@
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,700px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,700px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   townRef = React.createRef();
   nameRef = React.createRef();
@@ -124,7 +124,6 @@ class Component extends DCLogic {
   whyRef = React.createRef();
   renderVals() {
     return {
-      showFlags: this.props.showFlags ?? true,
       townRef: this.townRef, nameRef: this.nameRef, emailRef: this.emailRef, whyRef: this.whyRef,
       submit: () => {
         const v = r => (r.current && r.current.value) || '';

@@ -34,9 +34,6 @@
     <div style="font-size:0.813rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#0B7DA8;margin-bottom:12px">Primary donation channel</div>
     <div style="font-size:1.5rem;font-weight:800;margin-bottom:10px;color:#181818">GoFundMe embed goes here</div>
     <p style="font-size:0.875rem;line-height:1.6;margin:0 0 16px;opacity:0.7">The live campaign widget mounts in this slot.</p>
-    <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-      <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Campaign link pending</span>
-    </sc-if>
   </div>
 </header>
 
@@ -53,25 +50,27 @@
 <section data-screen-label="Tiers" style="padding:96px 56px;max-width:1400px;margin:0 auto">
   <div style="display:flex;align-items:center;gap:16px;margin-bottom:48px;flex-wrap:wrap">
     <h2 style="font-size:clamp(2.5rem,4.5vw,4rem);font-weight:800;line-height:1;letter-spacing:-0.02em;text-transform:uppercase;margin:0;color:#181818">What a dollar does<span style="color:#D22B42">.</span></h2>
-    <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-      <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm tiers — or adopt GoFundMe's</span>
-    </sc-if>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px">
     <div style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px">
-      <div style="font-size:3rem;font-weight:800;color:#A87B00">$25</div>
-      <div style="font-size:1.25rem;font-weight:700">Parts bin</div>
-      <p style="font-size:0.938rem;line-height:1.6;margin:0">Keeps a chapter stocked with screws, adhesive strips, and the connectors that always go missing.</p>
+      <div style="font-size:3rem;font-weight:800;color:#A87B00">$150</div>
+      <div style="font-size:1.25rem;font-weight:700">Start a chapter</div>
+      <p style="font-size:0.938rem;line-height:1.6;margin:0">Covers a new chapter's ~$100 startup kit — toolkit, first batch of parts — plus the buffer every launch needs.</p>
     </div>
     <div style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px">
-      <div style="font-size:3rem;font-weight:800;color:#0B7DA8">$50</div>
-      <div style="font-size:1.25rem;font-weight:700">Repair kit</div>
-      <p style="font-size:0.938rem;line-height:1.6;margin:0">A battery-and-screen kit for one refurb device — the difference between a parts machine and a giveaway.</p>
+      <div style="font-size:3rem;font-weight:800;color:#0B7DA8">$250</div>
+      <div style="font-size:1.25rem;font-weight:700">An e-waste drive</div>
+      <p style="font-size:0.938rem;line-height:1.6;margin:0">Funds a full device collection drive — bins, transport, and staffing for a town-wide intake day.</p>
     </div>
     <div style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px">
-      <div style="font-size:3rem;font-weight:800;color:#D22B42">$120</div>
-      <div style="font-size:1.25rem;font-weight:700">Full bench</div>
-      <p style="font-size:0.938rem;line-height:1.6;margin:0">One complete seat at a workshop: toolkit, mat, and a device to open. Someone learns to repair because of you.</p>
+      <div style="font-size:3rem;font-weight:800;color:#D22B42">$500</div>
+      <div style="font-size:1.25rem;font-weight:700">5 new chapters</div>
+      <p style="font-size:0.938rem;line-height:1.6;margin:0">Seeds five new chapters at $100 each — five more towns with a workshop of their own.</p>
+    </div>
+    <div style="background:#E7E1DE;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px">
+      <div style="font-size:3rem;font-weight:800;color:#16C0FF">$1,000</div>
+      <div style="font-size:1.25rem;font-weight:700">10 new chapters</div>
+      <p style="font-size:0.938rem;line-height:1.6;margin:0">Seeds ten new chapters at $100 each — a whole new regional network of workshops.</p>
     </div>
   </div>
 </section>
@@ -93,13 +92,13 @@
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   renderVals() {
-    return { showFlags: this.props.showFlags ?? true };
+    return {};
   }
 }
 </script>

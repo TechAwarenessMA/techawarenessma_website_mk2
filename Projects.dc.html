@@ -65,25 +65,14 @@
   </div>
 </section>
 
-<section data-screen-label="OpenH2O" style="padding:0 56px 96px;max-width:1400px;margin:0 auto">
-  <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-    <div style="border:2px dashed #2C3E50;border-radius:24px;padding:36px 48px;display:flex;align-items:center;gap:24px;opacity:0.75;flex-wrap:wrap">
-      <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm before publishing</span>
-      <div>
-        <div style="font-size:1.25rem;font-weight:700;color:#181818">OpenH2O</div>
-        <p style="font-size:0.875rem;line-height:1.6;margin:4px 0 0;max-width:640px">AI water/carbon-footprint tool — currently documented only on Ronit's personal portfolio. Include here only if confirmed as a TAA project, not a personal one.</p>
-      </div>
-    </div>
-  </sc-if>
-</section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   renderVals() {
-    return { showFlags: this.props.showFlags ?? true };
+    return {};
   }
 }
 </script>

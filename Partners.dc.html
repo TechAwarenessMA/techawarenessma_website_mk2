@@ -60,9 +60,6 @@
   <div style="max-width:1400px;margin:0 auto">
     <div style="display:flex;align-items:center;gap:16px;margin-bottom:48px;flex-wrap:wrap">
       <h2 style="font-size:clamp(2.5rem,4.5vw,4rem);font-weight:800;line-height:1;letter-spacing:-0.02em;text-transform:uppercase;margin:0">Sponsor something real<span style="color:#FAC206">.</span></h2>
-      <sc-if value="{{ showFlags }}" hint-placeholder-val="{{ true }}">
-        <span style="display:inline-flex;background:#FAC206;color:#181818;font-size:0.625rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px">Confirm tiers still accurate</span>
-      </sc-if>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:48px">
       <div style="border:1px solid rgba(248,243,241,0.25);border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:12px">
@@ -85,13 +82,13 @@
   </div>
 </section>
 
-<dc-import name="SiteFooter" show-flags="{{ showFlags }}" hint-size="100%,640px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,640px"></dc-import>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlags&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{}">
 class Component extends DCLogic {
   renderVals() {
-    return { showFlags: this.props.showFlags ?? true };
+    return {};
   }
 }
 </script>
