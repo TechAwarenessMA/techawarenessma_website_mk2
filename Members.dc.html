@@ -29,7 +29,7 @@
   <header data-screen-label="Members grid" style="padding:56px 56px 48px;max-width:1400px;margin:0 auto">
     <h1 style="font-size:clamp(3.5rem,7.5vw,6.875rem);font-weight:800;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin:0 0 28px;color:#181818">Meet the<br><span style="margin-left:0.9em;color:#D22B42">members.</span></h1>
     <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-      <p style="font-size:1.125rem;line-height:1.65;max-width:540px;margin:0">One HQ, four chapters, and everyone fixes things on a school night. Tap a face to read what they actually do.</p>
+      <p style="font-size:1.125rem;line-height:1.65;max-width:540px;margin:0">One big team, and everyone fixes things on a school night. Tap a face to read what they actually do.</p>
     </div>
   </header>
 
@@ -107,14 +107,10 @@
 class Component extends DCLogic {
   state = { open: null };
   chapters = [
-    { key: 'ma', title: 'TAA MA', sub: 'Headquarters — Shrewsbury' },
-    { key: 'westborough', title: 'TAA Westborough', sub: 'Chapter' },
-    { key: 'worcester', title: 'TAA Worcester', sub: 'Chapter' },
-    { key: 'grafton', title: 'TAA Grafton', sub: 'Chapter' },
-    { key: 'southgate', title: 'Southgate Senior Center', sub: 'Senior Center' },
+    { key: 'team', title: 'TAA Team', sub: 'One large team' },
   ];
   data = [
-    { id: 'ronit', chapter: 'ma', name: 'Ronit Sharma', role: 'Executive Director', accent: '#FAC206', photo: 'uploads/RonitSharma_ExecutiveDirector.JPG',
+    { id: 'ronit', chapter: 'team', name: 'Ronit Sharma', role: 'Executive Director', accent: '#FAC206', photo: 'uploads/RonitSharma_ExecutiveDirector.JPG',
       does: 'Strategy, partners, and the inbox — keeps the whole 501(c)(3) moving.',
       bio: 'Runs the whole thing — strategy, partners, and the inbox. The reason a school-club rejection turned into a 501(c)(3).',
       work: [
@@ -122,7 +118,7 @@ class Component extends DCLogic {
         { t: 'Nonprofit paperwork', d: 'Filings, insurance, and everything that keeps the 501(c)(3) status real.' },
         { t: 'Chapter approvals', d: 'Reviews every Start-a-Chapter application and issues the access codes for chapter certification.' },
       ] },
-    { id: 'tanay', chapter: 'ma', name: 'Tanay Mangal', role: 'Programs & Education Lead', accent: '#0B7DA8',
+    { id: 'tanay', chapter: 'team', name: 'Tanay Mangal', role: 'Programs & Education Lead', accent: '#0B7DA8',
       photo: 'uploads/TanayMangal_shrewsbury.PNG',
       does: 'Owns the 12-week curriculum and what happens at every bench.',
       bio: 'Owns the 12-week curriculum and what happens at every bench, every week, in every chapter.',
@@ -131,7 +127,7 @@ class Component extends DCLogic {
         { t: 'Workshop nights', d: 'Plans each session — which devices, which skills, which benches — before anyone shows up.' },
         { t: 'Certification', d: 'Maintains the 9-module chapter certification content, flashcards and flowcharts included.' },
       ] },
-    { id: 'nathan', chapter: 'ma', name: 'Nathan Anwin', role: 'Operations & Logistics Lead', accent: '#D22B42',
+    { id: 'nathan', chapter: 'team', name: 'Nathan Anwin', role: 'Operations & Logistics Lead', accent: '#D22B42',
       photo: 'uploads/NathanAnwin_shrewsbury.jpeg',
       does: 'Toolkits, devices, venues, drives — gets things where they need to be.',
       bio: 'Toolkits, devices, venues, drives — if it had to be somewhere on a Tuesday night, Nathan got it there.',
@@ -140,7 +136,7 @@ class Component extends DCLogic {
         { t: 'Collection drives', d: 'Runs the device drives behind the 442 devices collected so far.' },
         { t: 'Venues', d: 'Books and sets up the rooms in Shrewsbury, Grafton, Westborough, and Worcester.' },
       ] },
-    { id: 'ekansh', chapter: 'ma', name: 'Ekansh Jain', role: 'Finance & Impact Lead', accent: '#0B7DA8',
+    { id: 'ekansh', chapter: 'team', name: 'Ekansh Jain', role: 'Finance & Impact Lead', accent: '#0B7DA8',
       photo: 'uploads/EkanshJain_shrewsbury.jpeg',
       does: 'Counts the dollars and the pounds of e-waste — honestly.',
       bio: 'Counts the dollars and the pounds of e-waste — honestly. Every stat on the homepage goes through him first.',
@@ -149,7 +145,7 @@ class Component extends DCLogic {
         { t: 'Impact numbers', d: 'Weighs, counts, and verifies the stats — 1,545 lbs diverted, 120+ repairs — before they go public.' },
         { t: 'Reporting', d: 'Writes the reports partners and sponsors see at the end of each season.' },
       ] },
-    { id: 'suhrit', chapter: 'ma', name: 'Suhrit Ghosh', role: 'Outreach & Community Lead', accent: '#D22B42',
+    { id: 'suhrit', chapter: 'team', name: 'Suhrit Ghosh', role: 'Outreach & Community Lead', accent: '#D22B42',
       photo: 'uploads/SuhritGhosh_shrewsbury.jpeg',
       does: 'Libraries, senior centers, and the feed — gets every town to show up.',
       bio: 'Gets every town to show up — libraries, senior centers, and the feed. If you found us online, that was him.',
@@ -158,45 +154,36 @@ class Component extends DCLogic {
         { t: 'New chapters', d: 'Finds and recruits the students who want to start a chapter in their town.' },
         { t: 'Instagram', d: 'Shoots and posts the workshop timelapses and bench photos on the feed.' },
       ] },
-    { id: 'howie', chapter: 'westborough', name: 'Howie Cao', role: 'Chapter Lead', accent: '#FAC206',
+    { id: 'howie', chapter: 'team', name: 'Howie Cao', role: 'Westborough Chapter Lead', accent: '#FAC206',
       photo: 'uploads/HowieCao_westborough_chapterlead.jpeg',
       bio: 'Runs the Westborough chapter — the benches, the people, and the weekly workshop night.' },
-    { id: 'atharv', chapter: 'westborough', name: 'Atharv Mishra', role: 'Programs Lead', accent: '#0B7DA8',
+    { id: 'atharv', chapter: 'team', name: 'Atharv Mishra', role: 'Westborough Programs Lead', accent: '#0B7DA8',
       photo: 'uploads/AtharvMishra_westborough_programslead.jpeg',
       bio: 'Runs the 12-week curriculum at the Westborough benches.' },
-    { id: 'cullen', chapter: 'westborough', name: 'Cullen Bautista', role: 'Operations & Outreach Lead', accent: '#D22B42',
+    { id: 'cullen', chapter: 'team', name: 'Cullen Bautista', role: 'Westborough Operations & Outreach Lead', accent: '#D22B42',
       photo: 'uploads/CullenBautista_westborough_outreachlead.jpeg',
       bio: 'Toolkits and turnout — runs both operations and outreach for Westborough.' },
-    { id: 'niti', chapter: 'worcester', name: 'Niti Tyagi', role: 'Chapter Lead', accent: '#FAC206',
+    { id: 'niti', chapter: 'team', name: 'Niti Tyagi', role: 'Worcester Chapter Lead', accent: '#FAC206',
       photo: 'uploads/NitiTyagi_northborough_chapterlead.jpeg',
       bio: 'Runs the Worcester chapter — the benches, the people, and the weekly workshop night.' },
-    { id: 'bhoomi', chapter: 'worcester', name: 'Bhoomi Prashanth', role: 'Programs Lead', accent: '#0B7DA8',
+    { id: 'bhoomi', chapter: 'team', name: 'Bhoomi Prashanth', role: 'Worcester Programs Lead', accent: '#0B7DA8',
       photo: 'uploads/BhoomiPrashanth_northbrough_programslead.jpeg',
       bio: 'Runs the 12-week curriculum at the Worcester benches.' },
-    { id: 'dhriti', chapter: 'worcester', name: 'Dhriti Krishnaswamy', role: 'Outreach Lead', accent: '#D22B42',
+    { id: 'dhriti', chapter: 'team', name: 'Dhriti Krishnaswamy', role: 'Worcester Outreach Lead', accent: '#D22B42',
       photo: 'uploads/DhritiKrishnaswamy_northborough_operations%3Aoutreachlead.jpeg',
       bio: 'Gets Worcester to show up — venues, flyers, and new members.' },
-    { id: 'ram', chapter: 'grafton', name: 'Ram Kondapalli', role: 'Chapter Lead', accent: '#FAC206',
+    { id: 'ram', chapter: 'team', name: 'Ram Kondapalli', role: 'Grafton Chapter Lead', accent: '#FAC206',
       photo: 'uploads/RamKondapalli_grafton_chapterlead.jpg',
       bio: 'Runs the Grafton chapter — the benches, the people, and the weekly workshop night.' },
-    { id: 'puneeth', chapter: 'grafton', name: 'Puneeth Nuna', role: 'Programs Lead', accent: '#0B7DA8',
+    { id: 'puneeth', chapter: 'team', name: 'Puneeth Nuna', role: 'Grafton Programs Lead', accent: '#0B7DA8',
       photo: 'uploads/PuneethNunna_grafton_programslead.jpeg',
       bio: 'Runs the 12-week curriculum at the Grafton benches.' },
-    { id: 'kevin', chapter: 'grafton', name: 'Kevin Lui', role: 'Operations Lead', accent: '#D22B42',
+    { id: 'kevin', chapter: 'team', name: 'Kevin Lui', role: 'Grafton Operations Lead', accent: '#D22B42',
       photo: 'uploads/KevinLee_grafton_operationslead.JPG',
       bio: 'Toolkits, devices, and room setup for the Grafton workshop nights.' },
-    { id: 'param', chapter: 'grafton', name: 'Param Tyagi', role: 'Outreach Lead', accent: '#FAC206',
+    { id: 'param', chapter: 'team', name: 'Param Tyagi', role: 'Grafton Outreach Lead', accent: '#FAC206',
       photo: 'uploads/ParamTyagi_grafton.jpeg',
       bio: 'Gets Grafton to show up — venues, flyers, and new members.' },
-    { id: 'howie', chapter: 'southgate', name: 'Howie Cao', role: 'Chapter Lead', accent: '#FAC206',
-      photo: 'uploads/HowieCao_westborough_chapterlead.jpeg',
-      bio: 'Runs the Westborough chapter — the benches, the people, and the weekly workshop night.' },
-    { id: 'atharv', chapter: 'southgate', name: 'Atharv Mishra', role: 'Programs Lead', accent: '#0B7DA8',
-      photo: 'uploads/AtharvMishra_westborough_programslead.jpeg',
-      bio: 'Runs the 12-week curriculum at the Westborough benches.' },
-    { id: 'cullen', chapter: 'southgate', name: 'Cullen Bautista', role: 'Operations & Outreach Lead', accent: '#D22B42',
-      photo: 'uploads/CullenBautista_westborough_outreachlead.jpeg',
-      bio: 'Toolkits and turnout — runs both operations and outreach for Westborough.' },
   ];
   componentDidMount() {
     this.syncHash = () => {
@@ -214,7 +201,6 @@ class Component extends DCLogic {
     const people = this.data.filter(d => !d.vacant);
     const sel = people.find(d => d.id === this.state.open);
     const next = sel ? people[(people.indexOf(sel) + 1) % people.length] : null;
-    const chTitle = sel ? this.chapters.find(c => c.key === sel.chapter).title : '';
     return {
       cols: this.props.columns ?? 3,
       gridView: !sel, profileView: !!sel,
@@ -232,7 +218,7 @@ class Component extends DCLogic {
       pSlot: sel ? 'team-' + sel.id : '', pPh: sel ? 'Drop ' + sel.name.split(' ')[0] + "'s photo" : '',
       pSrc: sel ? (sel.photo || '') : '',
       pName: sel ? sel.name : '',
-      pRoleLine: sel ? sel.role + ' · ' + chTitle : '',
+      pRoleLine: sel ? sel.role : '',
       pColor: sel ? this.txt(sel.accent) : '#2C3E50',
       pBio: sel ? sel.bio : '',
       pHasWork: !!(sel && sel.work), pWork: sel && sel.work ? sel.work : [],
