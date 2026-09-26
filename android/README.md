@@ -4,6 +4,15 @@ A native Android app with the same content and features as techawarenessma.com, 
 with Kotlin and Jetpack Compose. Everything is bundled: photos, fonts, timelapse videos,
 and the chapter-certification course. The app works offline and has no internet permission.
 
+<p>
+  <img src="docs/screenshots/home.png" width="200" alt="Home screen">
+  <img src="docs/screenshots/home-tool-mat.png" width="200" alt="Tap-a-tool Pro Mat on Home">
+  <img src="docs/screenshots/chapters.png" width="200" alt="Chapter picker">
+  <img src="docs/screenshots/members.png" width="200" alt="Members grid">
+  <img src="docs/screenshots/certification.png" width="200" alt="Certification course overview">
+  <img src="docs/screenshots/certification-module.png" width="200" alt="Escalation ladder in Module 5">
+</p>
+
 ## Website page → app screen
 
 | Website | App |
