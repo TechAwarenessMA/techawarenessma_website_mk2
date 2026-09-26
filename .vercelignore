@@ -1,0 +1,3 @@
+# The Android app lives in this repo but isn't part of the website.
+android/
+.claude/

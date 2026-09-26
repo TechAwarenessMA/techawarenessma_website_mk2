@@ -4,6 +4,8 @@
 
 This repository is a static Tech Awareness Association website built with Design Canvas-style HTML components. Root-level `*.dc.html` files are individual pages or reusable components: `index.html` is the home page, while `SiteNav.dc.html` and `SiteFooter.dc.html` are imported site-wide. Keep page-specific behavior close to its page; use `support.js` only for the generated Design Canvas runtime and do not edit it manually. `image-slot.js` provides the image-slot custom element. Store site media in `uploads/` and preserve descriptive filenames.
 
+`android/` is the native Android app (Kotlin + Jetpack Compose) with the same content and features as the site; see `android/README.md`. Its copy is ported from these pages into `android/app/src/main/java/.../content/SiteContent.kt` and the certification files, so a content change on the site should be mirrored there. Its media is generated from `uploads/` with `python3 android/tools/import_assets.py`. `.vercelignore` keeps `android/` out of the Vercel deploy.
+
 `_ds/organic-*/` is a vendored design-system reference. Treat its bundle, manifest, and stylesheet as generated/reference material unless a task explicitly targets that system. `handbook-text.txt` is source content for the chapter-certification material.
 
 ## Development & Validation
