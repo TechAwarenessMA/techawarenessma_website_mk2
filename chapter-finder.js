@@ -2,6 +2,7 @@
   // Public services for this small static site. Replace with hosted services as traffic grows.
   const geocoderUrl = 'https://photon.komoot.io/api/';
   const routerUrl = 'https://router.project-osrm.org/table/v1/driving/';
+  const nearbyDriveSeconds = 20 * 60;
   const chapters = [
     { id: 'shrewsbury', venue: 'Shrewsbury Public Library', address: '609 Main Street, Shrewsbury, MA 01545', coordinates: [-71.7127268, 42.2970212], schedule: 'Tuesdays, 7:30–8:30 PM' },
     { id: 'grafton', venue: 'Grafton Public Library', address: '35 Grafton Common, Grafton, MA 01519', coordinates: [-71.6844194, 42.2059793], schedule: 'Saturdays, 12:00–1:00 PM' },
@@ -42,6 +43,7 @@
           .choice-title{display:block;font-weight:600}.choice-detail{display:block;font-size:.75rem;color:#52616d;margin-top:3px}
           .number{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:24px;height:24px;border-radius:50%;background:#0B7DA8;color:white;font-size:.75rem;font-weight:700}
           .result{margin-top:24px;background:#F8F3F1;border-radius:20px;padding:24px}
+          .start-prompt{padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid #E7E1DE}.start-prompt p{margin:0 0 16px;font-weight:600;color:#181818}
           h3{font-size:1.5rem;line-height:1.3;color:#181818;margin:12px 0}
           .time{font-size:2rem;font-weight:800;color:#181818;margin:0;line-height:1.2}
           .facts{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0}.facts dt{font-size:.688rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:8px}.facts dd{margin:0;font-weight:600;color:#181818}
@@ -337,7 +339,19 @@
         return element;
       };
       const formatTime = seconds => seconds < 60 ? '<1 min' : Math.round(seconds / 60) + ' min';
-      add('div', 'Your nearest chapter', 'kicker');
+      // Use the fastest raw travel time, even when Grafton wins the one-minute tie-break.
+      const noNearbyChapter = Math.min(...durations) > nearbyDriveSeconds;
+      if (noNearbyChapter) {
+        const prompt = add('div', '', 'start-prompt');
+        const message = document.createElement('p');
+        message.textContent = 'No chapter within a 20-minute drive. Bring one to your town.';
+        const start = document.createElement('a');
+        start.className = 'directions';
+        start.textContent = 'Start a chapter →';
+        start.href = 'StartChapter.dc.html';
+        prompt.append(message, start);
+      }
+      add('div', noNearbyChapter ? 'Closest existing chapter' : 'Your nearest chapter', 'kicker');
       add('h3', chapter.venue);
       add('p', chapter.address);
       const facts = document.createElement('dl'); facts.className = 'facts';
